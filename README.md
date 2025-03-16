@@ -6,4 +6,4 @@
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mehara-rothila&layout=compact&theme=radical)
 
-![Snake animation](https://github.com/mehara-rothila/mehara-rothila/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/mehara-rothila/mehara-rothila/blob/output/github-contribution-grid-snake-dark.svg)

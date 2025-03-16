@@ -1,3 +1,3 @@
-<div align="center">
-  <img src="https://github.com/mehara-rothila/mehara-rothila/blob/output/github-contribution-grid-snake-dark.svg" />
+<div align="center" style="width: 100%">
+  <img src="https://github.com/mehara-rothila/mehara-rothila/blob/output/github-contribution-grid-snake.svg" alt="snake" style="width: 100%"/>
 </div>

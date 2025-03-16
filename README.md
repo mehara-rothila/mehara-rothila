@@ -1,4 +1,3 @@
-# Mehara Rothila Ranawaka
 
 <!-- Snake Animation -->
 <picture>

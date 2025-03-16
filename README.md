@@ -1,3 +1,6 @@
+# Mehara Rothila Ranawaka
+
+##  GitHub Contributions
 
 <!-- Snake Animation -->
 <picture>
@@ -6,6 +9,6 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/github-contribution-grid-snake.svg">
 </picture>
 
-## 📊 LeetCode Stats
+## 🧩 LeetCode Stats
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/mehara-rothila?theme=dark&font=Baloo&ext=heatmap)](https://leetcode.com/mehara-rothila)

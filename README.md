@@ -2,19 +2,90 @@
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=GitHub%20Contributions&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32"/>
+## 🎨 Custom Snake Animations
 
-<br/>
+### 🌊 Ocean Theme
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/ocean-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/ocean-snake.svg">
+  <img alt="ocean snake" src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/ocean-snake.svg">
+</picture>
 
-## 🐍 Devouring My Contributions 🐍
+**GitHub Action Code:**
+```yaml
+- uses: Platane/snk@v3
+  with:
+    github_user_name: mehara-rothila
+    outputs: |
+      dist/ocean-snake.svg?palette=ocean_plus
+      dist/ocean-snake-dark.svg?palette=ocean_dark
+```
 
-<br/>
+---
 
-<img src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="Snake animation" />
-<img src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/github-contribution-grid-snake.svg#gh-light-mode-only" alt="Snake animation" />
+### 🌈 Rainbow Theme
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/rainbow-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/rainbow-snake.svg">
+  <img alt="rainbow snake" src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/rainbow-snake.svg">
+</picture>
 
-<br/><br/>
+**GitHub Action Code:**
+```yaml
+- uses: Platane/snk@v3
+  with:
+    github_user_name: mehara-rothila
+    outputs: |
+      dist/rainbow-snake.svg?palette=github
+      dist/rainbow-snake-dark.svg?palette=github-dark
+```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
+---
+
+### 💜 Neon/Cyberpunk Theme
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/neon-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/neon-snake.svg">
+  <img alt="neon snake" src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/neon-snake.svg">
+</picture>
+
+**GitHub Action Code:**
+```yaml
+- uses: Platane/snk@v3
+  with:
+    github_user_name: mehara-rothila
+    outputs: |
+      dist/neon-snake.svg?color_snake=#ff00de&color_dots=#00ff00,#0000ff,#ff0000,#ffff00
+      dist/neon-snake-dark.svg?color_snake=#ff00de&color_dots=#00ff00,#0000ff,#ff0000,#ffff00,#00ffff
+```
+
+---
+
+### 🔥 Fire Theme
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/fire-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/fire-snake.svg">
+  <img alt="fire snake" src="https://raw.githubusercontent.com/mehara-rothila/mehara-rothila/output/fire-snake.svg">
+</picture>
+
+**GitHub Action Code:**
+```yaml
+- uses: Platane/snk@v3
+  with:
+    github_user_name: mehara-rothila
+    outputs: |
+      dist/fire-snake.svg?color_snake=#ff4500&color_dots=#ff0000,#ff4500,#ff8c00,#ffa500,#ffd700
+      dist/fire-snake-dark.svg?color_snake=#ff4500&color_dots=#8b0000,#ff0000,#ff4500,#ff8c00
+```
+
+---
+
+## 📝 How to Use:
+
+1. Go to your `mehara-rothila/mehara-rothila` repository
+2. Create/edit `.github/workflows/snake.yml`
+3. Replace with one of the code blocks above
+4. Update your README.md with the corresponding image path
+5. Push and wait for the action to run!
 
 </div>

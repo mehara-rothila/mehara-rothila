@@ -1,183 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <!-- Cyberpunk Gradients -->
-    <linearGradient id="cyberSky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#050014" />
-      <stop offset="50%" stop-color="#18002e" />
-      <stop offset="100%" stop-color="#2a0045" />
+    <!-- Deep Space Gradient -->
+    <linearGradient id="deepSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020005" />
+      <stop offset="40%" stop-color="#12001f" />
+      <stop offset="80%" stop-color="#2d004d" />
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0.2"/>
     </linearGradient>
 
-    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f3ff" />
-      <stop offset="100%" stop-color="#ff00ff" />
-    </linearGradient>
-    
-    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a12" />
-      <stop offset="100%" stop-color="#020205" />
+    <!-- Retro Sun Gradient -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffce00" />
+      <stop offset="50%" stop-color="#ff00a0" />
+      <stop offset="100%" stop-color="#9d00ff" />
     </linearGradient>
 
-    <!-- Glitch Filter -->
-    <filter id="glow">
+    <!-- Hologram Gradient -->
+    <linearGradient id="holoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0, 243, 255, 0)" />
+      <stop offset="20%" stop-color="rgba(0, 243, 255, 0.8)" />
+      <stop offset="50%" stop-color="rgba(0, 243, 255, 0.1)" />
+      <stop offset="80%" stop-color="rgba(0, 243, 255, 0.8)" />
+      <stop offset="100%" stop-color="rgba(0, 243, 255, 0)" />
+    </linearGradient>
+
+    <!-- Filters for Neon Glow -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip path for the sun stripes -->
+    <mask id="sunStripeMask">
+      <rect x="0" y="0" width="800" height="450" fill="white" />
+      <rect x="0" y="260" width="800" height="4" fill="black" />
+      <rect x="0" y="270" width="800" height="6" fill="black" />
+      <rect x="0" y="282" width="800" height="8" fill="black" />
+      <rect x="0" y="296" width="800" height="10" fill="black" />
+      <rect x="0" y="312" width="800" height="12" fill="black" />
+    </mask>
   </defs>
 
   <style>
-    /* Neon Pulse */
-    .neon-pulse { animation: pulse 2s ease-in-out infinite alternate; }
-    @keyframes pulse {
-        0% { opacity: 0.8; filter: drop-shadow(0 0 2px #ff00ff); }
-        100% { opacity: 1; filter: drop-shadow(0 0 8px #ff00ff); }
-    }
+    /* Global Animations */
+    .flicker { animation: flickerAnim 0.1s infinite alternate; }
+    @keyframes flickerAnim { 0% { opacity: 0.8; } 100% { opacity: 1; } }
+
+    .slow-pulse { animation: pulse 4s ease-in-out infinite alternate; }
+    @keyframes pulse { 0% { opacity: 0.3; } 100% { opacity: 0.7; } }
+
+    .hover { animation: hoverAnim 4s ease-in-out infinite alternate; }
+    @keyframes hoverAnim { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); } }
+
+    /* Searchlights */
+    .beam { transform-origin: 50% 100%; animation: scanSky 15s ease-in-out infinite alternate; }
+    .beam-left { animation-duration: 12s; animation-delay: -5s; }
+    .beam-right { animation-duration: 18s; animation-delay: -2s; }
     
-    .cyan-pulse { animation: pulseCyan 3s ease-in-out infinite alternate; }
-    @keyframes pulseCyan {
-        0% { opacity: 0.7; filter: drop-shadow(0 0 2px #00f3ff); }
-        100% { opacity: 1; filter: drop-shadow(0 0 8px #00f3ff); }
+    @keyframes scanSky {
+      0% { transform: rotate(-25deg) scaleY(1); opacity: 0.1; }
+      50% { transform: rotate(0deg) scaleY(1.2); opacity: 0.3; }
+      100% { transform: rotate(25deg) scaleY(1); opacity: 0.1; }
     }
 
-    /* Glitch Text Animation */
-    .glitch { animation: glitch-anim 3s infinite linear alternate-reverse; }
-    @keyframes glitch-anim {
-      0% { transform: translate(0) }
-      20% { transform: translate(-2px, 2px) }
-      40% { transform: translate(-2px, -2px) }
-      60% { transform: translate(2px, 2px) }
-      80% { transform: translate(2px, -2px) }
-      100% { transform: translate(0) }
-    }
-    
-    /* Flying Car */
-    .car-1 { animation: flyBy 12s linear infinite; }
-    @keyframes flyBy {
-        0% { transform: translateX(-100px) translateY(50px); opacity: 0; }
-        10% { opacity: 1; }
-        90% { opacity: 1; }
-        100% { transform: translateX(900px) translateY(-50px); opacity: 0; }
-    }
-    
-    .car-2 { animation: flyBySlow 18s linear infinite; animation-delay: 5s; }
-    @keyframes flyBySlow {
-        0% { transform: translateX(900px) translateY(150px); opacity: 0; }
-        10% { opacity: 1; }
-        90% { opacity: 1; }
-        100% { transform: translateX(-100px) translateY(120px); opacity: 0; }
+    /* Monorail Train */
+    .train { animation: moveTrain 10s linear infinite; }
+    @keyframes moveTrain {
+      0% { transform: translateX(850px); }
+      100% { transform: translateX(-400px); }
     }
 
-    /* Acid Rain */
-    .rain { animation: rainFall 0.7s linear infinite; stroke: #00f3ff; stroke-opacity: 0.4; }
-    .rain-pink { animation: rainFall 0.9s linear infinite; stroke: #ff00ff; stroke-opacity: 0.3; }
-    @keyframes rainFall {
-        0% { transform: translateY(-50px); opacity: 0; }
-        20% { opacity: 1; }
-        100% { transform: translateY(450px); opacity: 0; }
+    /* Hologram Glitch */
+    .holo-glitch { animation: holoGlitch 5s infinite; }
+    @keyframes holoGlitch {
+      0%, 90%, 95% { transform: translate(0,0) scale(1,1); opacity: 0.8; }
+      91% { transform: translate(-2px, 1px) scale(1.02, 1); opacity: 0.6; }
+      92% { transform: translate(2px, -1px) scale(0.98, 1); opacity: 0.9; }
+      93% { transform: translate(0, 0) scale(1, 1); opacity: 0.8; }
     }
-
-    /* Scanner/Grid Effect */
-    .grid-scan { animation: scan 4s linear infinite; }
-    @keyframes scan {
-        0% { transform: translateY(0); opacity: 0; }
-        50% { opacity: 0.3; }
-        100% { transform: translateY(450px); opacity: 0; }
-    }
+    
+    /* Rain */
+    .rain-heavy { animation: rainFall 0.6s linear infinite; stroke: #a300ff; stroke-opacity: 0.4; stroke-dasharray: 20, 30; }
+    @keyframes rainFall { from { stroke-dashoffset: 50; } to { stroke-dashoffset: 0; } }
   </style>
 
-  <!-- Sky -->
-  <rect width="100%" height="100%" fill="url(#cyberSky)" />
+  <!-- Sky & Background -->
+  <rect width="100%" height="100%" fill="url(#deepSky)" />
 
-  <!-- The Sun/Moon (Cyber sun) -->
-  <circle cx="600" cy="350" r="120" fill="url(#neonGradient)" opacity="0.1">
-      <animate attributeName="r" values="120;125;120" dur="4s" repeatCount="indefinite" />
-  </circle>
-  <!-- Grid Lines in background (Sun) -->
-  <g stroke="#ff00ff" stroke-width="1" opacity="0.2">
-      <line x1="0" y1="400" x2="800" y2="400" />
-      <line x1="0" y1="420" x2="800" y2="420" />
-      <line x1="0" y1="440" x2="800" y2="440" />
-      <line x1="400" y1="450" x2="400" y2="250" />
-      <line x1="200" y1="450" x2="350" y2="250" />
-      <line x1="600" y1="450" x2="450" y2="250" />
+  <!-- Retro Sun (Behind Buildings) -->
+  <circle cx="400" cy="350" r="180" fill="url(#sunGrad)" mask="url(#sunStripeMask)" opacity="0.8" />
+
+  <!-- Background Grid (Perspective Floor) -->
+  <g transform="translate(0, 350)" opacity="0.3">
+    <path d="M0,0 L800,0" stroke="#ff00ff" stroke-width="2" />
+    <!-- Radiating Lines -->
+    <line x1="400" y1="0" x2="-400" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <line x1="400" y1="0" x2="-100" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <line x1="400" y1="0" x2="200" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <line x1="400" y1="0" x2="600" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <line x1="400" y1="0" x2="900" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <line x1="400" y1="0" x2="1200" y2="200" stroke="#ff00ff" stroke-width="1" />
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="20" x2="800" y2="20" stroke="#ff00ff" stroke-width="0.5" />
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#ff00ff" stroke-width="0.7" />
+    <line x1="0" y1="90" x2="800" y2="90" stroke="#ff00ff" stroke-width="1" />
   </g>
 
-  <!-- Back Buildings -->
-  <g transform="translate(0, 50)" opacity="0.7">
-    <rect x="50" y="200" width="80" height="200" fill="#0f0518" />
-    <rect x="200" y="150" width="100" height="250" fill="#0f0518" />
-    <rect x="500" y="180" width="60" height="220" fill="#0f0518" />
-    <rect x="650" y="220" width="90" height="180" fill="#0f0518" />
-    <!-- Distant Lights -->
-    <rect x="210" y="160" width="5" height="5" fill="#f0f" class="neon-pulse" />
-    <rect x="210" y="180" width="5" height="5" fill="#f0f" class="neon-pulse" style="animation-delay: 0.5s"/>
+  <!-- Searchlights (Behind City) -->
+  <g transform="translate(400, 450)">
+    <path d="M-10,0 L-40,-450 L40,-450 L10,0" fill="#fff" opacity="0.1" class="beam beam-left" />
+    <path d="M-5,0 L-30,-400 L30,-400 L5,0" fill="#00f3ff" opacity="0.1" class="beam beam-right" />
   </g>
 
-  <!-- Flying Cars (Behind main buildings) -->
-  <g class="car-1">
-      <rect x="0" y="0" width="40" height="8" rx="2" fill="#00f3ff" filter="url(#glow)" />
-      <circle cx="5" cy="8" r="2" fill="#fff" />
-      <circle cx="35" cy="8" r="2" fill="#fff" />
-      <path d="M-10,4 L0,4" stroke="#ff00ff" stroke-width="2" opacity="0.6" />
+  <!-- Layer 1: Far Buildings (Silhouette) -->
+  <path d="M50,450 L50,200 L120,200 L120,220 L150,220 L150,450 M600,450 L600,250 L750,180 L800,220 L800,450" fill="#050010" />
+
+  <!-- Layer 2: Mid-Ground City & Monorail Track -->
+  <g transform="translate(0, 0)">
+    <!-- Mega Building Left -->
+    <rect x="0" y="100" width="180" height="350" fill="#120820" />
+    <rect x="20" y="120" width="10" height="300" fill="#000" opacity="0.5" />
+    <!-- Windows -->
+    <path d="M40,120 h5 v5 h-5 z M60,120 h5 v5 h-5 z M40,140 h5 v5 h-5 z" fill="#ff00ff" class="flicker" />
+    <path d="M40,200 h100 v2 h-100 z" fill="#00f3ff" opacity="0.5" />
+    
+    <!-- Center Spire -->
+    <path d="M350,450 L350,150 L380,100 L420,100 L450,150 L450,450" fill="#1a0c2e" />
+    <!-- Spire Light -->
+    <circle cx="400" cy="110" r="5" fill="#fff" filter="url(#strongGlow)" class="slow-pulse" />
+    <line x1="400" y1="110" x2="400" y2="0" stroke="#fff" stroke-width="2" opacity="0.5" />
+    
+    <!-- Right Slant Building -->
+    <path d="M550,450 L550,250 L750,150 L750,450" fill="#150a25" />
+    <text x="730" y="200" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#00f3ff" writing-mode="tb" filter="url(#neonGlow)" opacity="0.8">CYBER</text>
   </g>
 
-  <!-- Mid Buildings (Main Skyline) -->
-  <g transform="translate(0, 20)">
-      <!-- Building 1 -->
-      <path d="M100,450 L100,200 L180,200 L180,220 L220,220 L220,450 Z" fill="url(#buildingGrad)" stroke="#333" stroke-width="1" />
-      <!-- Neon Trim 1 -->
-      <path d="M100,200 L180,200 L180,220 L220,220" fill="none" stroke="#ff00ff" stroke-width="2" class="neon-pulse" />
-
-      <!-- Building 2 (Tall Center) -->
-      <rect x="300" y="100" width="120" height="350" fill="url(#buildingGrad)" />
-      <rect x="320" y="120" width="80" height="330" fill="#151520" />
-      <rect x="340" y="80" width="5" height="40" fill="#333" /> <!-- Antenna -->
-      <circle cx="342.5" cy="80" r="2" fill="red">
-          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
-      </circle>
-      
-      <!-- Hologram Sign on Building 2 -->
-      <g transform="translate(330, 150)">
-          <rect x="0" y="0" width="60" height="30" fill="#00f3ff" opacity="0.2" />
-          <text x="5" y="20" font-family="monospace" font-size="12" fill="#00f3ff" class="glitch" style="font-weight:bold;">SYSTEM</text>
-          <rect x="0" y="0" width="60" height="30" fill="none" stroke="#00f3ff" stroke-width="1" class="cyan-pulse" />
-      </g>
-
-      <!-- Building 3 (Right) -->
-      <path d="M550,450 L550,250 L650,180 L750,250 L750,450 Z" fill="url(#buildingGrad)" />
-      <path d="M550,250 L650,180 L750,250" fill="none" stroke="#00f3ff" stroke-width="2" class="cyan-pulse" />
-      
-      <!-- Japanese Text (Vertical) -->
-      <text x="720" y="300" font-family="sans-serif" font-size="14" fill="#ff00ff" writing-mode="tb" filter="url(#glow)" class="neon-pulse">
-          未来
-      </text>
+  <!-- Monorail Track & Train -->
+  <path d="M-50,300 L850,300" stroke="#222" stroke-width="10" />
+  <path d="M-50,295 L850,295" stroke="#00f3ff" stroke-width="1" opacity="0.5" />
+  
+  <!-- The Train -->
+  <g class="train">
+      <!-- Cars -->
+      <rect x="0" y="285" width="300" height="15" rx="5" fill="#fff" opacity="0.9" />
+      <!-- Windows -->
+      <rect x="10" y="288" width="50" height="8" fill="#00f3ff" />
+      <rect x="70" y="288" width="50" height="8" fill="#00f3ff" />
+      <rect x="130" y="288" width="50" height="8" fill="#00f3ff" />
+      <rect x="190" y="288" width="50" height="8" fill="#00f3ff" />
+      <rect x="250" y="288" width="40" height="8" fill="#00f3ff" />
+      <!-- Glow -->
+      <rect x="0" y="300" width="300" height="5" fill="url(#holoGrad)" />
   </g>
 
-  <!-- Foreground Car -->
-  <g class="car-2">
-      <path d="M0,0 L60,0 L55,15 L5,15 Z" fill="#222" stroke="#ff00ff" stroke-width="1" />
-      <rect x="5" y="15" width="50" height="3" fill="#00f3ff" filter="url(#glow)" />
+  <!-- Layer 3: Foreground Rooftop & Netrunner -->
+  <g transform="translate(0, 0)">
+    <!-- Rooftop Ledge -->
+    <path d="M-50,450 L-50,380 L300,380 L350,450 Z" fill="#080808" />
+    <!-- Railing -->
+    <line x1="0" y1="360" x2="300" y2="360" stroke="#333" stroke-width="3" />
+    <line x1="50" y1="360" x2="50" y2="380" stroke="#333" stroke-width="3" />
+    <line x1="150" y1="360" x2="150" y2="380" stroke="#333" stroke-width="3" />
+    <line x1="250" y1="360" x2="250" y2="380" stroke="#333" stroke-width="3" />
+    
+    <!-- Character Silhouette (Netrunner) -->
+    <g transform="translate(200, 315) scale(0.9)" class="hover">
+       <!-- Body -->
+       <path d="M0,65 L-10,40 Q-15,30 0,20 Q 5,10 10,20 L 25,40 L 15,65 Z" fill="#000" />
+       <!-- Head/Hood -->
+       <circle cx="5" cy="15" r="12" fill="#000" />
+       <!-- Cyber Eye Visor -->
+       <rect x="5" y="12" width="10" height="3" fill="#ff0055" filter="url(#neonGlow)" />
+       <!-- Cyber Arm (Holding tablet?) -->
+       <line x1="15" y1="40" x2="30" y2="35" stroke="#111" stroke-width="4" />
+       <rect x="28" y="25" width="15" height="20" fill="#00f3ff" opacity="0.3" class="flicker" />
+    </g>
+
+    <!-- Holographic Terminal projected from ledge -->
+    <g transform="translate(100, 350)">
+      <path d="M0,0 L-20,-50 L60,-50 L40,0" fill="url(#holoGrad)" class="holo-glitch" />
+      <text x="0" y="-20" font-family="monospace" font-size="10" fill="#00f3ff" opacity="0.8">SYSTEM_R3ADY</text>
+      <text x="0" y="-10" font-family="monospace" font-size="10" fill="#00f3ff" opacity="0.6">CONNECTING...</text>
+    </g>
   </g>
 
-  <!-- Scanline Overlay -->
-  <rect width="100%" height="2" fill="#fff" opacity="0.1" class="grid-scan" />
-
-  <!-- Rain Layer -->
-  <g>
-      <line x1="50" y1="-20" x2="50" y2="10" class="rain" style="animation-delay: 0.1s" />
-      <line x1="150" y1="-20" x2="150" y2="10" class="rain-pink" style="animation-delay: 0.4s" />
-      <line x1="250" y1="-20" x2="250" y2="10" class="rain" style="animation-delay: 0.2s" />
-      <line x1="350" y1="-20" x2="350" y2="10" class="rain-pink" style="animation-delay: 0.7s" />
-      <line x1="450" y1="-20" x2="450" y2="10" class="rain" style="animation-delay: 0.3s" />
-      <line x1="600" y1="-20" x2="600" y2="10" class="rain-pink" style="animation-delay: 0.5s" />
-      <line x1="750" y1="-20" x2="750" y2="10" class="rain" style="animation-delay: 0.1s" />
-      
-      <!-- More Rain -->
-      <line x1="120" y1="-50" x2="120" y2="-20" class="rain" style="animation-delay: 0.6s" />
-      <line x1="380" y1="-50" x2="380" y2="-20" class="rain-pink" style="animation-delay: 0.2s" />
-      <line x1="580" y1="-50" x2="580" y2="-20" class="rain" style="animation-delay: 0.8s" />
-  </g>
+  <!-- Heavy Acid Rain Overlay -->
+  <line x1="200" y1="-100" x2="200" y2="500" class="rain-heavy" stroke-width="1" />
+  <line x1="450" y1="-100" x2="450" y2="500" class="rain-heavy" stroke-width="2" style="animation-delay: 0.2s" />
+  <line x1="700" y1="-100" x2="700" y2="500" class="rain-heavy" stroke-width="1" style="animation-delay: 0.4s" />
+  <line x1="100" y1="-100" x2="100" y2="500" class="rain-heavy" stroke-width="1.5" style="animation-delay: 0.1s" />
+  <line x1="600" y1="-100" x2="600" y2="500" class="rain-heavy" stroke-width="1" style="animation-delay: 0.5s" />
 
 </svg>

@@ -1,1 +1,1 @@
-![Batman Signal](lotus-flower.svg)
+![Flower](lotus-flower.svg)

@@ -15,8 +15,6 @@
 
 ### 🎓 Certifications
 - 🎖️ Microsoft Certified: Fabric Analytics Engineer Associate
-- 📜 SLIIT: AI/ML Engineer - Stage 2
-- 
 </td>
 <td valign="middle" align="right" width="40%">
 

@@ -1,1 +1,1 @@
-![Flower](lotus-flower-001.svg)
+![Flower](flower.svg)

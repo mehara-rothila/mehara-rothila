@@ -61,9 +61,6 @@
     </filter>
 
     <!-- GEOMETRY TEMPLATES (PETALS) -->
-    <!-- We define one "base" petal group for each gradient variation to save space -->
-    
-    <!-- Path Data definitions -->
     <path id="d1" d="M400,120 C350,180 340,280 360,400 Q380,380 400,350 Q420,380 440,400 C460,280 450,180 400,120 Z" />
     <path id="d2" d="M400,160 C360,210 355,300 370,400 Q385,385 400,365 Q415,385 430,400 C445,300 440,210 400,160 Z" />
     <path id="d3" d="M400,200 C370,240 368,320 380,400 Q390,390 400,375 Q410,390 420,400 C432,320 430,240 400,200 Z" />
@@ -71,33 +68,33 @@
 
     <!-- Petal Type 1 Assembly (Gradient 1) -->
     <g id="petal1-g1">
-      <use href="#d1" fill="url(#grad1)" opacity="0.95" filter="url(#bloom)" />
+      <use href="#d1" fill="url(#grad1)" opacity="1" filter="url(#bloom)" />
       <use href="#d1" fill="url(#cellPattern)" opacity="0.4" />
-      <use href="#d1" fill="url(#shimmer)" opacity="0.3" class="shimmer-fx" />
+      <use href="#d1" fill="url(#shimmer)" opacity="0.3" />
       <use href="#d1" fill="url(#sheen)" opacity="0.6" />
       <path d="M400,140 Q390,220 395,340" stroke="rgba(139,0,139,0.25)" stroke-width="1.8" fill="none"/>
       <path d="M400,140 Q410,220 405,340" stroke="rgba(139,0,139,0.25)" stroke-width="1.8" fill="none"/>
-      <use href="#d1" fill="none" stroke="rgba(255,182,193,0.6)" stroke-width="2" />
+      <use href="#d1" fill="none" stroke="#f9a8d4" stroke-width="2" />
     </g>
     <!-- Petal Type 1 Assembly (Gradient 2) -->
-    <g id="petal1-g2"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad2)" opacity="0.95" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
+    <g id="petal1-g2"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad2)" opacity="1" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
     <!-- Petal Type 1 Assembly (Gradient 3) -->
-    <g id="petal1-g3"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad3)" opacity="0.95" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
+    <g id="petal1-g3"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad3)" opacity="1" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
     <!-- Petal Type 1 Assembly (Gradient 4) -->
-    <g id="petal1-g4"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad4)" opacity="0.95" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
+    <g id="petal1-g4"><use href="#petal1-g1" /><use href="#d1" fill="url(#grad4)" opacity="1" filter="url(#bloom)" style="mix-blend-mode: color;"/></g>
 
     <!-- Petal Type 2 Assembly -->
     <g id="petal2-base">
-        <use href="#d2" opacity="0.92" filter="url(#softGlow)" />
-        <use href="#d2" fill="url(#shimmer)" opacity="0.4" class="shimmer-fx" />
+        <use href="#d2" opacity="1" filter="url(#softGlow)" />
+        <use href="#d2" fill="url(#shimmer)" opacity="0.4" />
         <use href="#d2" fill="url(#sheen)" opacity="0.5" />
         <path d="M400,175 Q392,250 395,360" stroke="rgba(139,0,139,0.2)" stroke-width="1.5" fill="none"/>
-        <use href="#d2" fill="none" stroke="rgba(255,192,203,0.5)" stroke-width="1.5" />
+        <use href="#d2" fill="none" stroke="#fbcfe8" stroke-width="1.5" />
     </g>
 
     <!-- Petal Type 3 Assembly -->
     <g id="petal3-base">
-        <use href="#d3" opacity="0.94" filter="url(#softGlow)" />
+        <use href="#d3" opacity="1" filter="url(#softGlow)" />
         <use href="#d3" fill="url(#shimmer)" opacity="0.5" />
         <use href="#d3" fill="url(#sheen)" opacity="0.6" />
         <path d="M400,215 Q395,280 398,370" stroke="rgba(139,0,139,0.18)" stroke-width="1.2" fill="none"/>
@@ -105,7 +102,7 @@
 
     <!-- Petal Type 4 Assembly -->
     <g id="petal4-base">
-        <use href="#d4" fill="url(#grad4)" opacity="0.96" filter="url(#softGlow)" />
+        <use href="#d4" fill="url(#grad4)" opacity="1" filter="url(#softGlow)" />
         <use href="#d4" fill="url(#shimmer)" opacity="0.6" />
         <use href="#d4" fill="url(#sheen)" opacity="0.7" />
     </g>
@@ -125,28 +122,10 @@
 
   </defs>
 
-  <style>
-    /* ANIMATIONS */
-    .breathe { animation: breathe 8s ease-in-out infinite alternate; transform-origin: 400px 400px; }
-    .rotate-slow { animation: rot 60s linear infinite; transform-origin: 400px 400px; }
-    .shimmer-fx { animation: shim 4s linear infinite; }
-    
-    @keyframes breathe {
-        0% { transform: scale(0.98) rotate(0deg); filter: brightness(1); }
-        100% { transform: scale(1.02) rotate(2deg); filter: brightness(1.1); }
-    }
-    @keyframes rot { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    @keyframes shim { 0% { opacity: 0.2; } 50% { opacity: 0.6; } 100% { opacity: 0.2; } }
-  </style>
-
-  <!-- BACKGROUND -->
-  <!-- Optional dark bg to make it pop, remove if you want transparent -->
-  <!-- <rect width="100%" height="100%" fill="#1a0510" /> -->
-
-  <g class="rotate-slow"> 
-    
+  <!-- Static Group (No Animation) -->
+  <g> 
     <!-- LAYER 1 (Outer - 24 Petals) -->
-    <g class="breathe" style="animation-delay: 0s">
+    <g>
         <use href="#petal1-g1" transform="rotate(0 400 400)" />
         <use href="#petal1-g2" transform="rotate(15 400 400)" />
         <use href="#petal1-g3" transform="rotate(30 400 400)" />
@@ -174,7 +153,7 @@
     </g>
 
     <!-- LAYER 2 (18 Petals) -->
-    <g class="breathe" style="animation-delay: -1s">
+    <g>
         <!-- Pattern: Grad 2, 3, 4 repeating -->
         <use href="#petal2-base" fill="url(#grad2)" transform="rotate(10 400 400)" />
         <use href="#petal2-base" fill="url(#grad3)" transform="rotate(30 400 400)" />
@@ -197,7 +176,7 @@
     </g>
 
     <!-- LAYER 3 (12 Petals) -->
-    <g class="breathe" style="animation-delay: -2s">
+    <g>
         <!-- Pattern: Grad 3, 4 repeating -->
         <use href="#petal3-base" fill="url(#grad3)" transform="rotate(0 400 400)" />
         <use href="#petal3-base" fill="url(#grad4)" transform="rotate(30 400 400)" />
@@ -214,7 +193,7 @@
     </g>
 
     <!-- LAYER 4 (8 Petals) -->
-    <g class="breathe" style="animation-delay: -3s">
+    <g>
         <use href="#petal4-base" transform="rotate(22.5 400 400)" />
         <use href="#petal4-base" transform="rotate(67.5 400 400)" />
         <use href="#petal4-base" transform="rotate(112.5 400 400)" />
@@ -226,7 +205,7 @@
     </g>
 
     <!-- STAMENS (Outer - 30) -->
-    <g class="breathe" style="animation-delay: -4s">
+    <g>
        <use href="#stamen-outer" transform="rotate(0 400 400)" />
        <use href="#stamen-outer" transform="rotate(12 400 400)" />
        <use href="#stamen-outer" transform="rotate(24 400 400)" />
@@ -260,7 +239,7 @@
     </g>
 
     <!-- STAMENS (Inner - 20) -->
-    <g class="breathe" style="animation-delay: -5s">
+    <g>
        <use href="#stamen-inner" transform="rotate(8 400 400)" />
        <use href="#stamen-inner" transform="rotate(26 400 400)" />
        <use href="#stamen-inner" transform="rotate(44 400 400)" />

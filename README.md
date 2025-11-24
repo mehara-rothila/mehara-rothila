@@ -1,9 +1,9 @@
 <table>
 <tr>
-<td valign="top" width="60%">
-
+<td valign="top" width="50%">
+<img src="rose.svg" width="300" alt="Flower">
 </td>
-<td valign="middle" align="right" width="40%">
+<td valign="middle" align="right" width="50%">
 
 <img src="flower.svg" width="300" alt="Flower">
 

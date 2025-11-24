@@ -1,1 +1,1 @@
-![Flower](flower-slideshow.svg)
+![Flower](flower.svg)

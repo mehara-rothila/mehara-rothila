@@ -1,0 +1,633 @@
+<svg width="1000" height="1000" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Luxurious Peony Petal Gradients -->
+    <radialGradient id="peony-outer1" cx="25%" cy="25%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#fff0f5" />
+      <stop offset="30%" stop-color="#ffe4ec" />
+      <stop offset="50%" stop-color="#ffc9db" />
+      <stop offset="70%" stop-color="#ffabc9" />
+      <stop offset="85%" stop-color="#ff85b3" />
+      <stop offset="100%" stop-color="#ff6b9d" />
+    </radialGradient>
+
+    <radialGradient id="peony-outer2" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#fff5f9" />
+      <stop offset="20%" stop-color="#ffe0eb" />
+      <stop offset="40%" stop-color="#ffcce0" />
+      <stop offset="60%" stop-color="#ffaac9" />
+      <stop offset="80%" stop-color="#ff88b5" />
+      <stop offset="100%" stop-color="#ff5599" />
+    </radialGradient>
+
+    <radialGradient id="peony-mid1" cx="35%" cy="28%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#ffe8f0" />
+      <stop offset="50%" stop-color="#ffd1e0" />
+      <stop offset="75%" stop-color="#ffb3cc" />
+      <stop offset="100%" stop-color="#ff94bb" />
+    </radialGradient>
+
+    <radialGradient id="peony-mid2" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#fff9fb" />
+      <stop offset="30%" stop-color="#ffdde8" />
+      <stop offset="60%" stop-color="#ffc2d8" />
+      <stop offset="90%" stop-color="#ff99bb" />
+      <stop offset="100%" stop-color="#ff80aa" />
+    </radialGradient>
+
+    <radialGradient id="peony-inner" cx="45%" cy="30%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#ffe6f0" />
+      <stop offset="70%" stop-color="#ffb3d4" />
+      <stop offset="100%" stop-color="#ff8ab8" />
+    </radialGradient>
+
+    <radialGradient id="peony-core" cx="50%" cy="40%">
+      <stop offset="0%" stop-color="#fff5f9" />
+      <stop offset="50%" stop-color="#ffc9e0" />
+      <stop offset="100%" stop-color="#ff70a6" />
+    </radialGradient>
+
+    <radialGradient id="peony-center" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#fff9e6" />
+      <stop offset="25%" stop-color="#ffe8b3" />
+      <stop offset="50%" stop-color="#ffd966" />
+      <stop offset="75%" stop-color="#ffc430" />
+      <stop offset="100%" stop-color="#d4a824" />
+    </radialGradient>
+
+    <linearGradient id="peony-stem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7fa872" />
+      <stop offset="50%" stop-color="#669558" />
+      <stop offset="100%" stop-color="#4d7543" />
+    </linearGradient>
+
+    <radialGradient id="peony-leaf" cx="25%" cy="25%">
+      <stop offset="0%" stop-color="#a8d5a2" />
+      <stop offset="40%" stop-color="#7fa872" />
+      <stop offset="70%" stop-color="#669558" />
+      <stop offset="100%" stop-color="#4d7543" />
+    </radialGradient>
+
+    <linearGradient id="peony-vein" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(139, 0, 70, 0.1)" />
+      <stop offset="50%" stop-color="rgba(139, 0, 70, 0.25)" />
+      <stop offset="100%" stop-color="rgba(139, 0, 70, 0.1)" />
+    </linearGradient>
+
+    <!-- Exquisite Filters -->
+    <filter id="peony-softGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="peony-strongGlow">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feColorMatrix in="coloredBlur" type="matrix"
+        values="1.4 0 0 0 0  0 1.4 0 0 0  0 0 1.4 0 0  0 0 0 1.8 0"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="peony-delicateGlow">
+      <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
+      <feColorMatrix in="coloredBlur" type="matrix"
+        values="1.2 0 0 0 0  0 1.2 0 0 0  0 0 1.2 0 0  0 0 0 1.3 0"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="peony-softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Elegant Stem -->
+  <g>
+    <rect x="385" y="500" width="30" height="280" rx="15"
+          fill="url(#peony-stem)"
+          stroke="#4d7543"
+          stroke-width="2"
+          filter="url(#peony-softShadow)"/>
+    <rect x="390" y="510" width="8" height="260" rx="4"
+          fill="rgba(255, 255, 255, 0.2)"/>
+  </g>
+
+  <!-- Beautiful Leaves -->
+  <g filter="url(#peony-softGlow)">
+    <!-- Left leaf -->
+    <ellipse cx="310" cy="600" rx="60" ry="40"
+             fill="url(#peony-leaf)"
+             stroke="#4d7543"
+             stroke-width="2.5"
+             transform="rotate(-40 310 600)"/>
+    <path d="M 310,560 Q 308,580 306,620"
+          stroke="rgba(0, 100, 0, 0.4)"
+          stroke-width="2.5"
+          fill="none"/>
+    <ellipse cx="305" cy="590" rx="38" ry="25"
+             fill="rgba(255, 255, 255, 0.15)"
+             transform="rotate(-40 305 590)"/>
+
+    <!-- Right leaf -->
+    <ellipse cx="490" cy="640" rx="60" ry="40"
+             fill="url(#peony-leaf)"
+             stroke="#4d7543"
+             stroke-width="2.5"
+             transform="rotate(40 490 640)"/>
+    <path d="M 490,600 Q 492,620 494,660"
+          stroke="rgba(0, 100, 0, 0.4)"
+          stroke-width="2.5"
+          fill="none"/>
+    <ellipse cx="495" cy="630" rx="38" ry="25"
+             fill="rgba(255, 255, 255, 0.15)"
+             transform="rotate(40 495 630)"/>
+  </g>
+
+  <!-- Outermost Petal Layer - 10 Large Ruffled Petals -->
+  <g filter="url(#peony-delicateGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer1)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(36 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer2)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(72 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer1)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(108 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer2)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(144 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer1)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(180 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer2)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(216 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer1)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(252 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer2)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(288 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer1)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(324 400 400)">
+      <path d="M400,180 C355,230 345,310 362,400 Q382,382 400,355 Q418,382 438,400 C455,310 445,230 400,180 Z"
+            fill="url(#peony-outer2)" stroke="#ff85b3" stroke-width="2" opacity="0.96"/>
+      <path d="M380,250 Q375,260 380,270 Q385,260 380,250 M420,250 Q425,260 420,270 Q415,260 420,250"
+            stroke="rgba(255, 180, 200, 0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M400,190 Q396,270 398,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <path d="M400,190 Q404,270 402,380" stroke="url(#peony-vein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="240" rx="28" ry="48" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+  </g>
+
+  <!-- Second Layer - 12 Petals -->
+  <g filter="url(#peony-delicateGlow)">
+    <g transform="rotate(18 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(48 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(78 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(108 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(138 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(168 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(198 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(228 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(258 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(288 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(318 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid1)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(348 400 400)">
+      <path d="M400,220 C365,260 358,330 370,400 Q387,387 400,365 Q413,387 430,400 C442,330 435,260 400,220 Z"
+            fill="url(#peony-mid2)" stroke="#ff94bb" stroke-width="2" opacity="0.97"/>
+      <path d="M400,230 Q397,290 399,385" stroke="url(#peony-vein)" stroke-width="1.8" fill="none"/>
+      <ellipse cx="390" cy="270" rx="23" ry="38" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+  </g>
+
+  <!-- Third Layer - 14 Petals -->
+  <g filter="url(#peony-softGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(25.71 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(51.42 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(77.13 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(102.84 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(128.55 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(154.26 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(179.97 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(205.68 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(231.39 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(257.1 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(282.81 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(308.52 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(334.23 400 400)">
+      <path d="M400,250 C375,285 370,345 378,400 Q390,390 400,375 Q410,390 422,400 C430,345 425,285 400,250 Z"
+            fill="url(#peony-inner)" stroke="#ff9fc6" stroke-width="1.8" opacity="0.98"/>
+      <path d="M400,260 Q398,310 399,390" stroke="rgba(139, 0, 70, 0.2)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="392" cy="290" rx="18" ry="32" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+  </g>
+
+  <!-- Fourth Layer - 12 Inner Petals -->
+  <g filter="url(#peony-softGlow)">
+    <g transform="rotate(15 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(45 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(75 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(105 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(135 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(165 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(195 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(225 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(255 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(285 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(315 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+    <g transform="rotate(345 400 400)">
+      <path d="M400,280 C380,310 376,355 383,400 Q393,393 400,383 Q407,393 417,400 C424,355 420,310 400,280 Z"
+            fill="url(#peony-core)" stroke="#ffaac9" stroke-width="1.5" opacity="0.98"/>
+      <ellipse cx="395" cy="315" rx="15" ry="25" fill="rgba(255, 255, 255, 0.45)"/>
+    </g>
+  </g>
+
+  <!-- Fifth Layer - 10 Tightly Curled Petals -->
+  <g filter="url(#peony-softGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(36 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(72 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(108 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(144 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(180 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(216 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(252 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(288 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(324 400 400)">
+      <path d="M400,310 C385,335 382,370 387,400 Q395,395 400,388 Q405,395 413,400 C418,370 415,335 400,310 Z"
+            fill="url(#peony-core)" stroke="#ffb3cc" stroke-width="1.2" opacity="0.99"/>
+      <ellipse cx="397" cy="340" rx="12" ry="20" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+  </g>
+
+  <!-- Core Spiral - 8 Petals -->
+  <g filter="url(#peony-strongGlow)">
+    <g transform="rotate(22.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(67.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(112.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(157.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(202.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(247.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(292.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+    <g transform="rotate(337.5 400 400)">
+      <path d="M400,335 C388,355 386,380 390,398 Q396,395 400,392 Q404,395 410,398 C414,380 412,355 400,335 Z"
+            fill="url(#peony-core)" stroke="#ffc9db" stroke-width="1"/>
+      <ellipse cx="397" cy="360" rx="9" ry="16" fill="rgba(255, 255, 255, 0.55)"/>
+    </g>
+  </g>
+
+  <!-- Central Stamens - Golden Heart -->
+  <g filter="url(#peony-strongGlow)">
+    <!-- Base circles -->
+    <circle cx="400" cy="400" r="38" fill="url(#peony-center)" opacity="0.5"/>
+    <circle cx="400" cy="400" r="33" fill="url(#peony-center)"/>
+
+    <!-- Stamens - 20 total -->
+    <g><line x1="400" y1="400" x2="422" y2="400" stroke="#d4a824" stroke-width="1.8"/><circle cx="422" cy="400" r="3.5" fill="#fff9e6"/><circle cx="422" cy="400" r="2.5" fill="#ffe8b3"/><circle cx="422" cy="400" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="420.87" y2="406.87" stroke="#d4a824" stroke-width="1.8"/><circle cx="420.87" cy="406.87" r="3.5" fill="#fff9e6"/><circle cx="420.87" cy="406.87" r="2.5" fill="#ffe8b3"/><circle cx="420.87" cy="406.87" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="415.56" y2="413.46" stroke="#d4a824" stroke-width="1.8"/><circle cx="415.56" cy="413.46" r="3.5" fill="#fff9e6"/><circle cx="415.56" cy="413.46" r="2.5" fill="#ffe8b3"/><circle cx="415.56" cy="413.46" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="406.87" y2="420.87" stroke="#d4a824" stroke-width="1.8"/><circle cx="406.87" cy="420.87" r="3.5" fill="#fff9e6"/><circle cx="406.87" cy="420.87" r="2.5" fill="#ffe8b3"/><circle cx="406.87" cy="420.87" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="400" y2="422" stroke="#d4a824" stroke-width="1.8"/><circle cx="400" cy="422" r="3.5" fill="#fff9e6"/><circle cx="400" cy="422" r="2.5" fill="#ffe8b3"/><circle cx="400" cy="422" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="393.13" y2="420.87" stroke="#d4a824" stroke-width="1.8"/><circle cx="393.13" cy="420.87" r="3.5" fill="#fff9e6"/><circle cx="393.13" cy="420.87" r="2.5" fill="#ffe8b3"/><circle cx="393.13" cy="420.87" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="384.44" y2="413.46" stroke="#d4a824" stroke-width="1.8"/><circle cx="384.44" cy="413.46" r="3.5" fill="#fff9e6"/><circle cx="384.44" cy="413.46" r="2.5" fill="#ffe8b3"/><circle cx="384.44" cy="413.46" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="379.13" y2="406.87" stroke="#d4a824" stroke-width="1.8"/><circle cx="379.13" cy="406.87" r="3.5" fill="#fff9e6"/><circle cx="379.13" cy="406.87" r="2.5" fill="#ffe8b3"/><circle cx="379.13" cy="406.87" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="378" y2="400" stroke="#d4a824" stroke-width="1.8"/><circle cx="378" cy="400" r="3.5" fill="#fff9e6"/><circle cx="378" cy="400" r="2.5" fill="#ffe8b3"/><circle cx="378" cy="400" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="379.13" y2="393.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="379.13" cy="393.13" r="3.5" fill="#fff9e6"/><circle cx="379.13" cy="393.13" r="2.5" fill="#ffe8b3"/><circle cx="379.13" cy="393.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="384.44" y2="386.54" stroke="#d4a824" stroke-width="1.8"/><circle cx="384.44" cy="386.54" r="3.5" fill="#fff9e6"/><circle cx="384.44" cy="386.54" r="2.5" fill="#ffe8b3"/><circle cx="384.44" cy="386.54" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="393.13" y2="379.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="393.13" cy="379.13" r="3.5" fill="#fff9e6"/><circle cx="393.13" cy="379.13" r="2.5" fill="#ffe8b3"/><circle cx="393.13" cy="379.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="400" y2="378" stroke="#d4a824" stroke-width="1.8"/><circle cx="400" cy="378" r="3.5" fill="#fff9e6"/><circle cx="400" cy="378" r="2.5" fill="#ffe8b3"/><circle cx="400" cy="378" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="406.87" y2="379.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="406.87" cy="379.13" r="3.5" fill="#fff9e6"/><circle cx="406.87" cy="379.13" r="2.5" fill="#ffe8b3"/><circle cx="406.87" cy="379.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="415.56" y2="386.54" stroke="#d4a824" stroke-width="1.8"/><circle cx="415.56" cy="386.54" r="3.5" fill="#fff9e6"/><circle cx="415.56" cy="386.54" r="2.5" fill="#ffe8b3"/><circle cx="415.56" cy="386.54" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="420.87" y2="393.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="420.87" cy="393.13" r="3.5" fill="#fff9e6"/><circle cx="420.87" cy="393.13" r="2.5" fill="#ffe8b3"/><circle cx="420.87" cy="393.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="420.87" y2="393.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="420.87" cy="393.13" r="3.5" fill="#fff9e6"/><circle cx="420.87" cy="393.13" r="2.5" fill="#ffe8b3"/><circle cx="420.87" cy="393.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="413.46" y2="384.44" stroke="#d4a824" stroke-width="1.8"/><circle cx="413.46" cy="384.44" r="3.5" fill="#fff9e6"/><circle cx="413.46" cy="384.44" r="2.5" fill="#ffe8b3"/><circle cx="413.46" cy="384.44" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="406.87" y2="379.13" stroke="#d4a824" stroke-width="1.8"/><circle cx="406.87" cy="379.13" r="3.5" fill="#fff9e6"/><circle cx="406.87" cy="379.13" r="2.5" fill="#ffe8b3"/><circle cx="406.87" cy="379.13" r="1.5" fill="#ffd966"/></g>
+    <g><line x1="400" y1="400" x2="415.56" y2="386.54" stroke="#d4a824" stroke-width="1.8"/><circle cx="415.56" cy="386.54" r="3.5" fill="#fff9e6"/><circle cx="415.56" cy="386.54" r="2.5" fill="#ffe8b3"/><circle cx="415.56" cy="386.54" r="1.5" fill="#ffd966"/></g>
+
+    <!-- Center texture -->
+    <circle cx="400" cy="400" r="24" fill="#ffe8b3" opacity="0.7"/>
+    <circle cx="400" cy="400" r="18" fill="#ffd966"/>
+    <circle cx="400" cy="400" r="12" fill="#ffc430"/>
+    <circle cx="400" cy="400" r="7" fill="#d4a824"/>
+
+    <!-- Center highlight -->
+    <ellipse cx="394" cy="394" rx="10" ry="7" fill="rgba(255, 255, 255, 0.85)"/>
+    <ellipse cx="396" cy="396" rx="6" ry="4" fill="rgba(255, 255, 255, 0.95)"/>
+  </g>
+
+  <!-- Delicate Sparkles -->
+  <g opacity="0.85" filter="url(#peony-strongGlow)">
+    <circle cx="310" cy="300" r="3.5" fill="#ffffff"/>
+    <circle cx="490" cy="320" r="3" fill="#ffffff"/>
+    <circle cx="350" cy="490" r="2.5" fill="#ffffff"/>
+    <circle cx="450" cy="470" r="3.5" fill="#ffffff"/>
+    <circle cx="330" cy="380" r="2.5" fill="#ffe6f0"/>
+    <circle cx="470" cy="390" r="3" fill="#ffe6f0"/>
+    <circle cx="380" cy="260" r="2.5" fill="#ffffff"/>
+    <circle cx="420" cy="270" r="3" fill="#ffe6f0"/>
+  </g>
+</svg>

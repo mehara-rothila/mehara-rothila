@@ -1,97 +1,155 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
-    <!-- The Bat Symbol Path -->
-    <path id="bat-shape" d="M 50,25 C 50,25 60,35 60,50 C 60,65 55,75 55,75 C 55,75 75,70 85,80 C 85,80 82,60 85,55 C 88,50 92,48 95,50 C 98,52 100,60 100,60 C 100,60 102,52 105,50 C 108,48 112,50 115,55 C 118,60 115,80 115,80 C 125,70 145,75 145,75 C 145,75 140,65 140,50 C 140,35 150,25 150,25 C 150,25 125,40 100,20 C 75,40 50,25 50,25 Z" fill="#000" transform="translate(-100, -50) scale(2)"/>
-    
-    <!-- Mask for the spotlight beam -->
-    <mask id="beam-mask">
-      <rect x="0" y="0" width="800" height="400" fill="black" />
-      <path d="M 400,350 L 300,50 L 500,50 Z" fill="white">
-         <animateTransform attributeName="transform" type="rotate" from="-5 400 350" to="5 400 350" dur="6s" repeatCount="indefinite" values="-5 400 350; 5 400 350; -5 400 350" keyTimes="0; 0.5; 1" />
-      </path>
-    </mask>
-
-    <!-- Raindrop Symbol -->
-    <line id="rain" x1="0" y1="0" x2="0" y2="15" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
-  </defs>
-
-  <!-- Sky Background -->
-  <rect width="100%" height="100%" fill="#0a0a12" />
-
-  <!-- Moon/Cloud Glow behind signal -->
-  <circle cx="400" cy="150" r="100" fill="#2a2a35" filter="url(#blur)">
-     <animate attributeName="opacity" values="0.4;0.6;0.4" dur="8s" repeatCount="indefinite" />
-  </circle>
-
-  <!-- The Signal Beam -->
-  <g opacity="0.8">
-      <!-- The Beam Cone -->
-      <path d="M 400,450 L 250,-50 L 550,-50 Z" fill="url(#beamGradient)" opacity="0.3">
-        <animateTransform attributeName="transform" type="rotate" from="-5 400 450" to="5 400 450" dur="6s" repeatCount="indefinite" values="-5 400 450; 5 400 450; -5 400 450" keyTimes="0; 0.5; 1" />
-      </path>
-      
-      <!-- The Projected Oval Light on Clouds -->
-      <ellipse cx="400" cy="120" rx="120" ry="70" fill="#ffeb3b" opacity="0.8">
-        <animateTransform attributeName="transform" type="translate" values="-30 0; 30 0; -30 0" dur="6s" repeatCount="indefinite" />
-         <!-- Flicker Effect -->
-        <animate attributeName="opacity" values="0.7;0.8;0.6;0.8;0.7" dur="0.2s" repeatCount="indefinite" />
-      </ellipse>
-      
-      <!-- The Bat Symbol inside the light -->
-      <g transform="translate(300, 70)">
-        <path d="M 50,25 C 50,25 60,35 60,50 C 60,65 55,75 55,75 C 55,75 75,70 85,80 C 85,80 82,60 85,55 C 88,50 92,48 95,50 C 98,52 100,60 100,60 C 100,60 102,52 105,50 C 108,48 112,50 115,55 C 118,60 115,80 115,80 C 125,70 145,75 145,75 C 145,75 140,65 140,50 C 140,35 150,25 150,25 C 150,25 125,40 100,20 C 75,40 50,25 50,25 Z" fill="#0a0a12">
-            <animateTransform attributeName="transform" type="translate" values="-30 0; 30 0; -30 0" dur="6s" repeatCount="indefinite" />
-        </path>
-      </g>
-  </g>
-
-  <!-- City Skyline Silhouette (Static bottom) -->
-  <path d="M0,400 L0,320 L50,320 L50,280 L100,280 L100,340 L150,340 L150,250 L220,250 L220,350 L280,350 L280,300 L350,300 L350,400 Z" fill="#050508" />
-  <path d="M800,400 L800,310 L740,310 L740,260 L680,260 L680,330 L620,330 L620,290 L550,290 L550,360 L450,360 L450,400 Z" fill="#050508" />
-  
-  <!-- Rain Animation Layer -->
-  <g stroke="rgba(174, 194, 224, 0.4)" stroke-width="1.5" stroke-linecap="round">
-      <style>
-          .rain { animation: rainfall 1s linear infinite; }
-          .rain-slow { animation: rainfall 2s linear infinite; }
-          .rain-fast { animation: rainfall 0.7s linear infinite; }
-          
-          @keyframes rainfall {
-              0% { transform: translateY(-50px); opacity: 0; }
-              20% { opacity: 1; }
-              100% { transform: translateY(450px); opacity: 0; }
-          }
-      </style>
-      
-      <!-- Generating rain drops manually since we can't use JS -->
-      <line x1="100" y1="-20" x2="100" y2="0" class="rain" style="animation-delay: 0.2s" />
-      <line x1="250" y1="-20" x2="250" y2="0" class="rain-fast" style="animation-delay: 0.5s" />
-      <line x1="400" y1="-20" x2="400" y2="0" class="rain" style="animation-delay: 0.1s" />
-      <line x1="550" y1="-20" x2="550" y2="0" class="rain-slow" style="animation-delay: 0.8s" />
-      <line x1="700" y1="-20" x2="700" y2="0" class="rain-fast" style="animation-delay: 0.3s" />
-      
-      <line x1="50" y1="-50" x2="50" y2="-30" class="rain-fast" style="animation-delay: 0.7s" />
-      <line x1="180" y1="-50" x2="180" y2="-30" class="rain" style="animation-delay: 0.4s" />
-      <line x1="320" y1="-50" x2="320" y2="-30" class="rain-slow" style="animation-delay: 0.9s" />
-      <line x1="480" y1="-50" x2="480" y2="-30" class="rain" style="animation-delay: 0.2s" />
-      <line x1="620" y1="-50" x2="620" y2="-30" class="rain-fast" style="animation-delay: 0.6s" />
-      
-      <!-- More angled rain for depth -->
-      <g opacity="0.5">
-          <line x1="120" y1="-20" x2="120" y2="0" class="rain-fast" style="animation-delay: 0.1s" />
-          <line x1="380" y1="-20" x2="380" y2="0" class="rain-slow" style="animation-delay: 0.45s" />
-          <line x1="580" y1="-20" x2="580" y2="0" class="rain" style="animation-delay: 0.85s" />
-      </g>
-  </g>
-
-  <!-- Gradient Defs -->
-  <defs>
-    <linearGradient id="beamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#ffeb3b" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ffeb3b" stop-opacity="0" />
+    <!-- Cinematic Sky Gradient -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05070a" />
+      <stop offset="60%" stop-color="#0f111a" />
+      <stop offset="100%" stop-color="#1a1c29" />
     </linearGradient>
-    <filter id="blur">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+
+    <!-- Signal Beam Gradient -->
+    <linearGradient id="beamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffeb3b" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#ffeb3b" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Window Light Color -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cloud Filter -->
+    <filter id="cloudFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" />
+      <feDisplacementMap in="SourceGraphic" scale="100" />
     </filter>
   </defs>
+
+  <style>
+    /* Lightning Flash Animation */
+    .lightning { animation: flash 8s infinite; }
+    @keyframes flash {
+        0%, 92%, 95%, 100% { opacity: 0; }
+        93% { opacity: 0.6; }
+        94% { opacity: 0.1; }
+        96% { opacity: 0.8; }
+        97% { opacity: 0; }
+    }
+
+    /* Cape Flow Animation */
+    .cape { animation: wind 3s ease-in-out infinite alternate; transform-origin: top center; }
+    @keyframes wind {
+        0% { transform: skewX(0deg) scaleX(1); }
+        50% { transform: skewX(2deg) scaleX(0.98); }
+        100% { transform: skewX(-1deg) scaleX(1.02); }
+    }
+
+    /* Signal Movement */
+    .signal-move { animation: search 10s ease-in-out infinite alternate; transform-origin: 50% 100%; }
+    @keyframes search {
+        0% { transform: rotate(-8deg); }
+        100% { transform: rotate(8deg); }
+    }
+
+    /* Fog Drift */
+    .fog { animation: drift 20s linear infinite; opacity: 0.3; }
+    @keyframes drift {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-50px); }
+        100% { transform: translateX(0); }
+    }
+    
+    /* Rain */
+    .rain-drop { animation: fall 0.8s linear infinite; stroke: rgba(200, 200, 220, 0.4); stroke-width: 1.5; }
+    .rain-layer-2 { animation-duration: 1.2s; stroke: rgba(200, 200, 220, 0.2); stroke-width: 1; }
+    @keyframes fall {
+        0% { transform: translateY(-100px); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(500px); opacity: 0; }
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)" />
+  
+  <!-- Lightning Overlay (Whole Screen Flash) -->
+  <rect width="100%" height="100%" fill="#fff" class="lightning" />
+
+  <!-- Moon (Obscured) -->
+  <circle cx="500" cy="100" r="60" fill="#223" opacity="0.5" filter="url(#glow)" />
+
+  <!-- Back City Layer (Far distance) -->
+  <path d="M0,450 L0,280 L40,280 L40,250 L90,250 L90,300 L150,300 L150,220 L200,220 L200,280 L800,280 L800,450 Z" fill="#0f1219" opacity="0.7" transform="translate(0, 50)" />
+
+  <!-- The Bat Signal Beam (Behind foreground buildings) -->
+  <g class="signal-move" transform-origin="400 450">
+    <path d="M 400,450 L 250,-50 L 550,-50 Z" fill="url(#beamGradient)" opacity="0.6" />
+    <!-- Projected Ellipse -->
+    <ellipse cx="400" cy="80" rx="110" ry="60" fill="#ffeb3b" opacity="0.8" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.7;0.8;0.6;0.9;0.7" dur="0.15s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Bat Symbol inside Signal -->
+    <path d="M 400,60 C 400,60 410,70 410,85 C 410,100 405,110 405,110 C 405,110 425,105 435,115 C 435,115 432,95 435,90 C 438,85 442,83 445,85 C 448,87 450,95 450,95 C 450,95 452,87 455,85 C 458,83 462,85 465,90 C 468,95 465,115 465,115 C 475,105 495,110 495,110 C 495,110 490,100 490,85 C 490,70 500,60 500,60 C 500,60 475,75 450,55 C 425,75 400,60 400,60 Z" fill="#1a1c29" transform="translate(-50, 0)" />
+  </g>
+
+  <!-- Mid City Layer -->
+  <g transform="translate(0, 20)">
+    <path d="M-10,450 L-10,320 L60,320 L60,350 L120,350 L120,280 L180,280 L180,330 L250,330 L250,250 L320,250 L320,350 L400,350 L400,300 L450,300 L450,380 L550,380 L550,260 L620,260 L620,340 L700,340 L700,290 L810,290 L810,450 Z" fill="#090b10" />
+    <!-- Windows (Random lights) -->
+    <rect x="260" y="270" width="4" height="6" fill="#aa9" opacity="0.6" />
+    <rect x="280" y="270" width="4" height="6" fill="#aa9" opacity="0.4" />
+    <rect x="260" y="290" width="4" height="6" fill="#aa9" opacity="0.5" />
+    <rect x="570" y="280" width="5" height="8" fill="#d4aa00" opacity="0.7" />
+    <rect x="590" y="280" width="5" height="8" fill="#d4aa00" opacity="0.3" />
+    <rect x="570" y="300" width="5" height="8" fill="#d4aa00" opacity="0.6" />
+  </g>
+
+  <!-- Fog / Mist Layer -->
+  <path d="M0,400 Q 200,380 400,400 T 800,400 L 800,450 L 0,450 Z" fill="#1a202c" class="fog" filter="url(#glow)" />
+
+  <!-- Foreground Gargoyle Ledge & Batman -->
+  <g transform="translate(580, 220) scale(0.8)">
+      <!-- Gargoyle Stone Ledge -->
+      <path d="M0,250 L-20,250 L-30,270 L-20,300 L150,300 L160,270 L150,250 L20,250 Z" fill="#181818" />
+      <path d="M0,250 Q -20,220 20,220 L 120,220 Q 160,220 150,250" fill="#222" />
+      
+      <!-- Batman Silhouette -->
+      <g>
+          <!-- Cape (Animated) -->
+          <path class="cape" d="M 30,120 Q 10,200 -20,280 L 100,280 Q 90,200 80,120 Z" fill="#080808" />
+          
+          <!-- Body -->
+          <path d="M 35,120 L 75,120 L 70,80 L 85,80 L 90,60 L 20,60 L 25,80 L 40,80 Z" fill="#050505" />
+          
+          <!-- Cowl/Head -->
+          <path d="M 42,60 L 42,40 L 45,30 L 48,45 L 62,45 L 65,30 L 68,40 L 68,60 Z" fill="#050505" />
+          
+          <!-- Eyes (White glowing) -->
+          <path d="M 45,48 L 52,50 L 45,52 Z" fill="#fff" opacity="0.9" />
+          <path d="M 65,48 L 58,50 L 65,52 Z" fill="#fff" opacity="0.9" />
+      </g>
+  </g>
+
+  <!-- Rain Overlay (Front) -->
+  <g>
+      <line x1="50" y1="-50" x2="50" y2="-10" class="rain-drop" style="animation-delay: 0.1s" />
+      <line x1="150" y1="-50" x2="150" y2="-10" class="rain-drop" style="animation-delay: 0.4s" />
+      <line x1="250" y1="-50" x2="250" y2="-10" class="rain-drop" style="animation-delay: 0.2s" />
+      <line x1="350" y1="-50" x2="350" y2="-10" class="rain-drop" style="animation-delay: 0.7s" />
+      <line x1="450" y1="-50" x2="450" y2="-10" class="rain-drop" style="animation-delay: 0.3s" />
+      <line x1="600" y1="-50" x2="600" y2="-10" class="rain-drop" style="animation-delay: 0.5s" />
+      <line x1="750" y1="-50" x2="750" y2="-10" class="rain-drop" style="animation-delay: 0.1s" />
+      
+      <!-- Layer 2 Rain (Slower/Smaller) -->
+      <line x1="100" y1="-50" x2="100" y2="-20" class="rain-layer-2" style="animation-delay: 0.3s" />
+      <line x1="300" y1="-50" x2="300" y2="-20" class="rain-layer-2" style="animation-delay: 0.6s" />
+      <line x1="500" y1="-50" x2="500" y2="-20" class="rain-layer-2" style="animation-delay: 0.8s" />
+      <line x1="700" y1="-50" x2="700" y2="-20" class="rain-layer-2" style="animation-delay: 0.2s" />
+  </g>
+
 </svg>

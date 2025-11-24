@@ -1,1 +1,1 @@
-![Batman Signal](cyberpunk-city.svg)
+![Batman Signal](lotus-flower.svg)

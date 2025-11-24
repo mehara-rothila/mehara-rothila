@@ -7,6 +7,7 @@
   </p>
   </td><td valign="middle" width="40%" align="center">
     <img src="flower.svg" width="350" alt="Flower">
-    <sub>© Designed by Mehara Rothila</sub>
+    <br>
+    <small>© Designed by Mehara Rothila</small>
   </td>
  </tr></table>

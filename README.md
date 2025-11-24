@@ -1,2 +1,2 @@
-![Batman Signal](batman-signal.svg)
+![Batman Signal](cyberpunk-city.svg)
 

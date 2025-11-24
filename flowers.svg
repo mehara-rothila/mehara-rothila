@@ -365,15 +365,12 @@
             stroke="#3d5a3a"
             stroke-width="2"
             filter="url(#rose-roseSoftShadow)"/>
-
-      <!-- Stem highlight -->
       <rect x="390" y="510" width="8" height="260" rx="4"
             fill="rgba(255, 255, 255, 0.2)"/>
     </g>
 
     <!-- Beautiful Leaves -->
     <g filter="url(#rose-petalGlow)">
-      <!-- Left leaf -->
       <ellipse cx="320" cy="620" rx="55" ry="35"
                fill="url(#rose-leafGrad)"
                stroke="#3d5a3a"
@@ -387,7 +384,6 @@
                fill="rgba(255, 255, 255, 0.15)"
                transform="rotate(-45 315 610)"/>
 
-      <!-- Right leaf -->
       <ellipse cx="480" cy="660" rx="55" ry="35"
                fill="url(#rose-leafGrad)"
                stroke="#3d5a3a"
@@ -402,6 +398,9 @@
                transform="rotate(45 485 650)"/>
     </g>
 
+    <!-- SCALED FLOWER BLOOM (1.4x bigger) -->
+    <g transform="scale(1.4) translate(-114, -40)">
+      
     <!-- Outermost Petal Layer -->
     <g filter="url(#rose-petalGlow)">
       <g transform="rotate(0 400 400)">
@@ -649,94 +648,26 @@
       <circle cx="400" cy="400" r="35" fill="url(#rose-centerGold)" opacity="0.5"/>
       <circle cx="400" cy="400" r="30" fill="url(#rose-centerGold)"/>
 
-      <!-- Stamens around center -->
-      <g>
-        <line x1="400" y1="400" x2="418" y2="400" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="418" cy="400" r="3" fill="#fff9e6"/>
-        <circle cx="418" cy="400" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="416.63" y2="406.89" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="416.63" cy="406.89" r="3" fill="#fff9e6"/>
-        <circle cx="416.63" cy="406.89" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="412.73" y2="412.73" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="412.73" cy="412.73" r="3" fill="#fff9e6"/>
-        <circle cx="412.73" cy="412.73" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="406.89" y2="416.63" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="406.89" cy="416.63" r="3" fill="#fff9e6"/>
-        <circle cx="406.89" cy="416.63" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="400" y2="418" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="400" cy="418" r="3" fill="#fff9e6"/>
-        <circle cx="400" cy="418" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="393.11" y2="416.63" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="393.11" cy="416.63" r="3" fill="#fff9e6"/>
-        <circle cx="393.11" cy="416.63" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="387.27" y2="412.73" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="387.27" cy="412.73" r="3" fill="#fff9e6"/>
-        <circle cx="387.27" cy="412.73" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="383.37" y2="406.89" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="383.37" cy="406.89" r="3" fill="#fff9e6"/>
-        <circle cx="383.37" cy="406.89" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="382" y2="400" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="382" cy="400" r="3" fill="#fff9e6"/>
-        <circle cx="382" cy="400" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="383.37" y2="393.11" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="383.37" cy="393.11" r="3" fill="#fff9e6"/>
-        <circle cx="383.37" cy="393.11" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="387.27" y2="387.27" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="387.27" cy="387.27" r="3" fill="#fff9e6"/>
-        <circle cx="387.27" cy="387.27" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="393.11" y2="383.37" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="393.11" cy="383.37" r="3" fill="#fff9e6"/>
-        <circle cx="393.11" cy="383.37" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="400" y2="382" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="400" cy="382" r="3" fill="#fff9e6"/>
-        <circle cx="400" cy="382" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="406.89" y2="383.37" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="406.89" cy="383.37" r="3" fill="#fff9e6"/>
-        <circle cx="406.89" cy="383.37" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="412.73" y2="387.27" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="412.73" cy="387.27" r="3" fill="#fff9e6"/>
-        <circle cx="412.73" cy="387.27" r="2" fill="#ffd966"/>
-      </g>
-      <g>
-        <line x1="400" y1="400" x2="416.63" y2="393.11" stroke="#f4c430" stroke-width="1.5"/>
-        <circle cx="416.63" cy="393.11" r="3" fill="#fff9e6"/>
-        <circle cx="416.63" cy="393.11" r="2" fill="#ffd966"/>
-      </g>
+      <g><line x1="400" y1="400" x2="418" y2="400" stroke="#f4c430" stroke-width="1.5"/><circle cx="418" cy="400" r="3" fill="#fff9e6"/><circle cx="418" cy="400" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="416.63" y2="406.89" stroke="#f4c430" stroke-width="1.5"/><circle cx="416.63" cy="406.89" r="3" fill="#fff9e6"/><circle cx="416.63" cy="406.89" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="412.73" y2="412.73" stroke="#f4c430" stroke-width="1.5"/><circle cx="412.73" cy="412.73" r="3" fill="#fff9e6"/><circle cx="412.73" cy="412.73" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="406.89" y2="416.63" stroke="#f4c430" stroke-width="1.5"/><circle cx="406.89" cy="416.63" r="3" fill="#fff9e6"/><circle cx="406.89" cy="416.63" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="400" y2="418" stroke="#f4c430" stroke-width="1.5"/><circle cx="400" cy="418" r="3" fill="#fff9e6"/><circle cx="400" cy="418" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="393.11" y2="416.63" stroke="#f4c430" stroke-width="1.5"/><circle cx="393.11" cy="416.63" r="3" fill="#fff9e6"/><circle cx="393.11" cy="416.63" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="387.27" y2="412.73" stroke="#f4c430" stroke-width="1.5"/><circle cx="387.27" cy="412.73" r="3" fill="#fff9e6"/><circle cx="387.27" cy="412.73" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="383.37" y2="406.89" stroke="#f4c430" stroke-width="1.5"/><circle cx="383.37" cy="406.89" r="3" fill="#fff9e6"/><circle cx="383.37" cy="406.89" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="382" y2="400" stroke="#f4c430" stroke-width="1.5"/><circle cx="382" cy="400" r="3" fill="#fff9e6"/><circle cx="382" cy="400" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="383.37" y2="393.11" stroke="#f4c430" stroke-width="1.5"/><circle cx="383.37" cy="393.11" r="3" fill="#fff9e6"/><circle cx="383.37" cy="393.11" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="387.27" y2="387.27" stroke="#f4c430" stroke-width="1.5"/><circle cx="387.27" cy="387.27" r="3" fill="#fff9e6"/><circle cx="387.27" cy="387.27" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="393.11" y2="383.37" stroke="#f4c430" stroke-width="1.5"/><circle cx="393.11" cy="383.37" r="3" fill="#fff9e6"/><circle cx="393.11" cy="383.37" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="400" y2="382" stroke="#f4c430" stroke-width="1.5"/><circle cx="400" cy="382" r="3" fill="#fff9e6"/><circle cx="400" cy="382" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="406.89" y2="383.37" stroke="#f4c430" stroke-width="1.5"/><circle cx="406.89" cy="383.37" r="3" fill="#fff9e6"/><circle cx="406.89" cy="383.37" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="412.73" y2="387.27" stroke="#f4c430" stroke-width="1.5"/><circle cx="412.73" cy="387.27" r="3" fill="#fff9e6"/><circle cx="412.73" cy="387.27" r="2" fill="#ffd966"/></g>
+      <g><line x1="400" y1="400" x2="416.63" y2="393.11" stroke="#f4c430" stroke-width="1.5"/><circle cx="416.63" cy="393.11" r="3" fill="#fff9e6"/><circle cx="416.63" cy="393.11" r="2" fill="#ffd966"/></g>
 
-      <!-- Inner golden texture -->
       <circle cx="400" cy="400" r="20" fill="#ffe6b3" opacity="0.6"/>
       <circle cx="400" cy="400" r="15" fill="#ffd966"/>
       <circle cx="400" cy="400" r="10" fill="#f4c430"/>
-
-      <!-- Center highlight -->
       <ellipse cx="395" cy="395" rx="8" ry="6" fill="rgba(255, 255, 255, 0.8)"/>
     </g>
 
@@ -749,5 +680,7 @@
       <circle cx="340" cy="390" r="2" fill="#ffe6f0" filter="url(#rose-roseStrongGlow)"/>
       <circle cx="460" cy="400" r="2.5" fill="#ffe6f0" filter="url(#rose-roseStrongGlow)"/>
     </g>
+
+    </g> <!-- End of scaled flower bloom -->
   </g>
 </svg>

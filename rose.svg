@@ -1,0 +1,487 @@
+<svg width="1000" height="1000" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Exquisite Rose Petal Gradients -->
+    <radialGradient id="rose-outerPetal" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#ffb3ba" />
+      <stop offset="20%" stop-color="#ff8894" />
+      <stop offset="40%" stop-color="#ff5566" />
+      <stop offset="60%" stop-color="#ee2244" />
+      <stop offset="80%" stop-color="#cc0033" />
+      <stop offset="100%" stop-color="#990022" />
+    </radialGradient>
+
+    <radialGradient id="rose-midPetal" cx="35%" cy="25%">
+      <stop offset="0%" stop-color="#ffc5cc" />
+      <stop offset="15%" stop-color="#ffaab8" />
+      <stop offset="35%" stop-color="#ff7788" />
+      <stop offset="55%" stop-color="#ff4455" />
+      <stop offset="75%" stop-color="#dd1133" />
+      <stop offset="100%" stop-color="#bb0022" />
+    </radialGradient>
+
+    <radialGradient id="rose-innerPetal" cx="40%" cy="20%">
+      <stop offset="0%" stop-color="#ffd5dd" />
+      <stop offset="25%" stop-color="#ffaabb" />
+      <stop offset="50%" stop-color="#ff6688" />
+      <stop offset="75%" stop-color="#ff3355" />
+      <stop offset="100%" stop-color="#cc0044" />
+    </radialGradient>
+
+    <radialGradient id="rose-corePetal" cx="45%" cy="30%">
+      <stop offset="0%" stop-color="#ffe0e8" />
+      <stop offset="30%" stop-color="#ffbbcc" />
+      <stop offset="60%" stop-color="#ff88aa" />
+      <stop offset="100%" stop-color="#ee2266" />
+    </radialGradient>
+
+    <linearGradient id="rose-petalVein" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(139, 0, 0, 0.15)" />
+      <stop offset="50%" stop-color="rgba(139, 0, 0, 0.25)" />
+      <stop offset="100%" stop-color="rgba(139, 0, 0, 0.15)" />
+    </linearGradient>
+
+    <linearGradient id="rose-stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b9062" />
+      <stop offset="50%" stop-color="#558046" />
+      <stop offset="100%" stop-color="#3d5a3a" />
+    </linearGradient>
+
+    <radialGradient id="rose-leafGrad" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#8fbc8f" />
+      <stop offset="40%" stop-color="#6b9062" />
+      <stop offset="70%" stop-color="#558046" />
+      <stop offset="100%" stop-color="#3d5a3a" />
+    </radialGradient>
+
+    <radialGradient id="rose-centerGold" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#fff9e6" />
+      <stop offset="30%" stop-color="#ffe6b3" />
+      <stop offset="60%" stop-color="#ffd966" />
+      <stop offset="100%" stop-color="#f4c430" />
+    </radialGradient>
+
+    <!-- Elegant Filters -->
+    <filter id="rose-petalGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="rose-roseSoftShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="rose-roseStrongGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feColorMatrix in="coloredBlur" type="matrix"
+        values="1.2 0 0 0 0  0 1.2 0 0 0  0 0 1.2 0 0  0 0 0 1.5 0"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Elegant Stem -->
+  <g>
+    <rect x="385" y="500" width="30" height="280" rx="15"
+          fill="url(#rose-stemGrad)"
+          stroke="#3d5a3a"
+          stroke-width="2"
+          filter="url(#rose-roseSoftShadow)"/>
+
+    <!-- Stem highlight -->
+    <rect x="390" y="510" width="8" height="260" rx="4"
+          fill="rgba(255, 255, 255, 0.2)"/>
+  </g>
+
+  <!-- Beautiful Leaves -->
+  <g filter="url(#rose-petalGlow)">
+    <!-- Left leaf -->
+    <ellipse cx="320" cy="620" rx="55" ry="35"
+             fill="url(#rose-leafGrad)"
+             stroke="#3d5a3a"
+             stroke-width="2.5"
+             transform="rotate(-45 320 620)"/>
+    <path d="M 320,585 Q 318,605 316,625"
+          stroke="rgba(0, 100, 0, 0.4)"
+          stroke-width="2"
+          fill="none"/>
+    <ellipse cx="315" cy="610" rx="35" ry="22"
+             fill="rgba(255, 255, 255, 0.15)"
+             transform="rotate(-45 315 610)"/>
+
+    <!-- Right leaf -->
+    <ellipse cx="480" cy="660" rx="55" ry="35"
+             fill="url(#rose-leafGrad)"
+             stroke="#3d5a3a"
+             stroke-width="2.5"
+             transform="rotate(45 480 660)"/>
+    <path d="M 480,625 Q 482,645 484,665"
+          stroke="rgba(0, 100, 0, 0.4)"
+          stroke-width="2"
+          fill="none"/>
+    <ellipse cx="485" cy="650" rx="35" ry="22"
+             fill="rgba(255, 255, 255, 0.15)"
+             transform="rotate(45 485 650)"/>
+  </g>
+
+  <!-- Outermost Petal Layer - Large Petals (8 petals at 0, 45, 90, 135, 180, 225, 270, 315) -->
+  <g filter="url(#rose-petalGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(0 400 400)"/>
+    </g>
+    <g transform="rotate(45 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(45 400 400)"/>
+    </g>
+    <g transform="rotate(90 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(90 400 400)"/>
+    </g>
+    <g transform="rotate(135 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(135 400 400)"/>
+    </g>
+    <g transform="rotate(180 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(180 400 400)"/>
+    </g>
+    <g transform="rotate(225 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(225 400 400)"/>
+    </g>
+    <g transform="rotate(270 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(270 400 400)"/>
+    </g>
+    <g transform="rotate(315 400 400)">
+      <path d="M400,200 C360,240 350,310 365,400 Q385,385 400,360 Q415,385 435,400 C450,310 440,240 400,200 Z"
+            fill="url(#rose-outerPetal)" stroke="#e63946" stroke-width="2.5" opacity="0.95"/>
+      <path d="M400,210 Q395,280 398,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <path d="M400,210 Q405,280 402,380" stroke="url(#rose-petalVein)" stroke-width="2" fill="none"/>
+      <ellipse cx="385" cy="260" rx="25" ry="45" fill="rgba(255, 255, 255, 0.4)" transform="rotate(315 400 400)"/>
+    </g>
+  </g>
+
+  <!-- Second Petal Layer - Medium Petals (8 petals at 22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5) -->
+  <g filter="url(#rose-petalGlow)">
+    <g transform="rotate(22.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(67.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(112.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(157.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(202.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(247.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(292.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+    <g transform="rotate(337.5 400 400)">
+      <path d="M400,240 C370,270 365,330 375,400 Q390,390 400,370 Q410,390 425,400 C435,330 430,270 400,240 Z"
+            fill="url(#rose-midPetal)" stroke="#ff4d6d" stroke-width="2" opacity="0.97"/>
+      <path d="M400,250 Q397,300 399,385" stroke="url(#rose-petalVein)" stroke-width="1.5" fill="none"/>
+      <ellipse cx="390" cy="280" rx="20" ry="35" fill="rgba(255, 255, 255, 0.35)"/>
+    </g>
+  </g>
+
+  <!-- Third Petal Layer - Smaller Petals (8 petals at 0, 45, 90, 135, 180, 225, 270, 315) -->
+  <g filter="url(#rose-petalGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(45 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(90 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(135 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(180 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(225 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(270 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+    <g transform="rotate(315 400 400)">
+      <path d="M400,270 C380,295 375,345 382,400 Q393,393 400,380 Q407,393 418,400 C425,345 420,295 400,270 Z"
+            fill="url(#rose-innerPetal)" stroke="#ff758f" stroke-width="2" opacity="0.98"/>
+      <path d="M400,280 Q398,320 399,390" stroke="rgba(139, 0, 0, 0.2)" stroke-width="1.2" fill="none"/>
+      <ellipse cx="392" cy="305" rx="15" ry="28" fill="rgba(255, 255, 255, 0.3)"/>
+    </g>
+  </g>
+
+  <!-- Fourth Petal Layer - Inner Petals (8 petals at 22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5) -->
+  <g filter="url(#rose-petalGlow)">
+    <g transform="rotate(22.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(67.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(112.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(157.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(202.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(247.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(292.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+    <g transform="rotate(337.5 400 400)">
+      <path d="M400,300 C385,320 382,360 387,400 Q395,395 400,387 Q405,395 413,400 C418,360 415,320 400,300 Z"
+            fill="url(#rose-corePetal)" stroke="#ff99b8" stroke-width="1.5" opacity="0.99"/>
+      <ellipse cx="395" cy="330" rx="12" ry="22" fill="rgba(255, 255, 255, 0.4)"/>
+    </g>
+  </g>
+
+  <!-- Core Spiral Petals - Tightly Curled (6 petals at 0, 60, 120, 180, 240, 300) -->
+  <g filter="url(#rose-roseStrongGlow)">
+    <g transform="rotate(0 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(60 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(120 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(180 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(240 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+    <g transform="rotate(300 400 400)">
+      <path d="M400,330 C390,345 388,370 392,395 Q397,393 400,390 Q403,393 408,395 C412,370 410,345 400,330 Z"
+            fill="url(#rose-corePetal)" stroke="#ffb3c6" stroke-width="1.2"/>
+      <ellipse cx="397" cy="355" rx="8" ry="15" fill="rgba(255, 255, 255, 0.5)"/>
+    </g>
+  </g>
+
+  <!-- Central Stamens - Golden Center -->
+  <g filter="url(#rose-roseStrongGlow)">
+    <!-- Center circle base -->
+    <circle cx="400" cy="400" r="35" fill="url(#rose-centerGold)" opacity="0.5"/>
+    <circle cx="400" cy="400" r="30" fill="url(#rose-centerGold)"/>
+
+    <!-- Stamens around center (16 stamens) -->
+    <g>
+      <line x1="400" y1="400" x2="418" y2="400" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="418" cy="400" r="3" fill="#fff9e6"/>
+      <circle cx="418" cy="400" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="416.63" y2="406.89" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="416.63" cy="406.89" r="3" fill="#fff9e6"/>
+      <circle cx="416.63" cy="406.89" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="412.73" y2="412.73" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="412.73" cy="412.73" r="3" fill="#fff9e6"/>
+      <circle cx="412.73" cy="412.73" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="406.89" y2="416.63" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="406.89" cy="416.63" r="3" fill="#fff9e6"/>
+      <circle cx="406.89" cy="416.63" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="400" y2="418" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="400" cy="418" r="3" fill="#fff9e6"/>
+      <circle cx="400" cy="418" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="393.11" y2="416.63" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="393.11" cy="416.63" r="3" fill="#fff9e6"/>
+      <circle cx="393.11" cy="416.63" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="387.27" y2="412.73" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="387.27" cy="412.73" r="3" fill="#fff9e6"/>
+      <circle cx="387.27" cy="412.73" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="383.37" y2="406.89" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="383.37" cy="406.89" r="3" fill="#fff9e6"/>
+      <circle cx="383.37" cy="406.89" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="382" y2="400" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="382" cy="400" r="3" fill="#fff9e6"/>
+      <circle cx="382" cy="400" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="383.37" y2="393.11" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="383.37" cy="393.11" r="3" fill="#fff9e6"/>
+      <circle cx="383.37" cy="393.11" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="387.27" y2="387.27" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="387.27" cy="387.27" r="3" fill="#fff9e6"/>
+      <circle cx="387.27" cy="387.27" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="393.11" y2="383.37" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="393.11" cy="383.37" r="3" fill="#fff9e6"/>
+      <circle cx="393.11" cy="383.37" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="400" y2="382" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="400" cy="382" r="3" fill="#fff9e6"/>
+      <circle cx="400" cy="382" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="406.89" y2="383.37" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="406.89" cy="383.37" r="3" fill="#fff9e6"/>
+      <circle cx="406.89" cy="383.37" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="412.73" y2="387.27" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="412.73" cy="387.27" r="3" fill="#fff9e6"/>
+      <circle cx="412.73" cy="387.27" r="2" fill="#ffd966"/>
+    </g>
+    <g>
+      <line x1="400" y1="400" x2="416.63" y2="393.11" stroke="#f4c430" stroke-width="1.5"/>
+      <circle cx="416.63" cy="393.11" r="3" fill="#fff9e6"/>
+      <circle cx="416.63" cy="393.11" r="2" fill="#ffd966"/>
+    </g>
+
+    <!-- Inner golden texture -->
+    <circle cx="400" cy="400" r="20" fill="#ffe6b3" opacity="0.6"/>
+    <circle cx="400" cy="400" r="15" fill="#ffd966"/>
+    <circle cx="400" cy="400" r="10" fill="#f4c430"/>
+
+    <!-- Center highlight -->
+    <ellipse cx="395" cy="395" rx="8" ry="6" fill="rgba(255, 255, 255, 0.8)"/>
+  </g>
+
+  <!-- Delicate Sparkles -->
+  <g opacity="0.8">
+    <circle cx="320" cy="320" r="3" fill="#ffffff" filter="url(#rose-roseStrongGlow)"/>
+    <circle cx="480" cy="340" r="2.5" fill="#ffffff" filter="url(#rose-roseStrongGlow)"/>
+    <circle cx="360" cy="480" r="2" fill="#ffffff" filter="url(#rose-roseStrongGlow)"/>
+    <circle cx="440" cy="460" r="3" fill="#ffffff" filter="url(#rose-roseStrongGlow)"/>
+    <circle cx="340" cy="390" r="2" fill="#ffe6f0" filter="url(#rose-roseStrongGlow)"/>
+    <circle cx="460" cy="400" r="2.5" fill="#ffe6f0" filter="url(#rose-roseStrongGlow)"/>
+  </g>
+</svg>

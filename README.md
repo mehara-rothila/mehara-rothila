@@ -8,7 +8,7 @@
       </p>
     </td>
     <td valign="middle" width="40%" align="center">
-      <img src="slideshow.gif" width="350" alt="Flower Slideshow">
+      <img src="flower-slideshow.gif" width="350" alt="Flower Slideshow">
       <br>
       <sub>© Designed by Mehara Rothila</sub>
     </td>

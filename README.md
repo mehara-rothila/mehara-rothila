@@ -8,4 +8,4 @@
 ### 🎓 Certifications
 - Microsoft Certified: Fabric Analytics Engineer Associate
   
-![Flower](flowers.svg)
+![Flower](flower.svg)

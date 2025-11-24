@@ -4,7 +4,6 @@
 
 ### 🎯 Recent Achievements
 
-**🏆 Major Wins**
 - 🥇 **1st Place** - SpiritX 2025 Inter-University Competition
 - 🏆 **Web App Excellence Award** - Idealize 2025 *(Best Web App)*
 - 🥈 **2nd Place** - FIT CodeRush 2024 Hackathon

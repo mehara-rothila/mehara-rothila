@@ -6,7 +6,7 @@
     <b>Microsoft Certified Fabric Analytics Engineer</b> specializing in <b>Machine Learning</b>, <b>Fraud Detection</b>, and <b>Data Analytics</b>.
   </p>
   </td><td valign="middle" width="50%" align="center">
-    <img src="flower.svg" width="1000" alt="Flower">
+    <img src="flower.svg"  alt="Flower">
     <br>
     <sub>© Designed by Mehara Rothila</sub>
   </td>

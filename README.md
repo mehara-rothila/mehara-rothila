@@ -1,5 +1,3 @@
-# Profile
-
 <table>
   <tr>
     <td valign="middle" width="60%" align="left">
@@ -10,7 +8,9 @@
       </p>
     </td>
     <td valign="middle" width="40%" align="center">
-      <img src="slideshow.svg" width="350" alt="Slideshow">
+      <img src="flower.svg" width="350" alt="Flower">
+      <br>
+      <img src="rose.svg" width="350" alt="Rose">
       <br>
       <sub>© Designed by Mehara Rothila</sub>
     </td>

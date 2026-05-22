@@ -7,6 +7,8 @@
     </td>
     <td valign="middle" width="45%" align="center">
       <img src="peony-flower.svg" width="100%" alt="Peony Flower"/>
+      <br/>
+      <sub>© Designed by Mehara Rothila</sub>
     </td>
   </tr>
 </table>

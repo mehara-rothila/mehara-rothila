@@ -1,0 +1,1716 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 800" width="100%" height="auto">
+  <defs>
+    <!-- Petal Gradients -->
+    <radialGradient id="petalL1" cx="50%" cy="100%" r="100%" fx="50%" fy="95%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="4%" stop-color="#fae8ff"/>
+      <stop offset="10%" stop-color="#f5d0fe"/>
+      <stop offset="18%" stop-color="#f0abfc"/>
+      <stop offset="28%" stop-color="#e879f9"/>
+      <stop offset="38%" stop-color="#d946ef"/>
+      <stop offset="48%" stop-color="#c026d3"/>
+      <stop offset="58%" stop-color="#a21caf"/>
+      <stop offset="68%" stop-color="#db2777"/>
+      <stop offset="78%" stop-color="#ec4899"/>
+      <stop offset="86%" stop-color="#f472b6"/>
+      <stop offset="92%" stop-color="#f9a8d4"/>
+      <stop offset="97%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </radialGradient>
+
+    <linearGradient id="iridescentOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.15"/>
+      <stop offset="25%" stop-color="#f0abfc" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#fde68a" stop-opacity="0.08"/>
+      <stop offset="75%" stop-color="#f0abfc" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <radialGradient id="petalL2" cx="50%" cy="100%" r="98%" fx="50%" fy="92%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="6%" stop-color="#fdf4ff"/>
+      <stop offset="14%" stop-color="#fae8ff"/>
+      <stop offset="24%" stop-color="#f5d0fe"/>
+      <stop offset="38%" stop-color="#f0abfc"/>
+      <stop offset="52%" stop-color="#e879f9"/>
+      <stop offset="66%" stop-color="#d946ef"/>
+      <stop offset="78%" stop-color="#f472b6"/>
+      <stop offset="88%" stop-color="#f9a8d4"/>
+      <stop offset="95%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL3" cx="50%" cy="100%" r="96%" fx="50%" fy="88%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="10%" stop-color="#fdf4ff"/>
+      <stop offset="22%" stop-color="#fce7f3"/>
+      <stop offset="36%" stop-color="#fbcfe8"/>
+      <stop offset="50%" stop-color="#f9a8d4"/>
+      <stop offset="64%" stop-color="#f472b6"/>
+      <stop offset="78%" stop-color="#ec4899"/>
+      <stop offset="88%" stop-color="#f9a8d4"/>
+      <stop offset="95%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL4" cx="50%" cy="100%" r="94%" fx="50%" fy="85%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="12%" stop-color="#fffbfc"/>
+      <stop offset="28%" stop-color="#fdf2f8"/>
+      <stop offset="44%" stop-color="#fce7f3"/>
+      <stop offset="60%" stop-color="#fbcfe8"/>
+      <stop offset="75%" stop-color="#f9a8d4"/>
+      <stop offset="86%" stop-color="#fbcfe8"/>
+      <stop offset="94%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL5" cx="50%" cy="100%" r="92%" fx="50%" fy="82%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="18%" stop-color="#fffbfc"/>
+      <stop offset="38%" stop-color="#fff5f7"/>
+      <stop offset="56%" stop-color="#fdf2f8"/>
+      <stop offset="74%" stop-color="#fce7f3"/>
+      <stop offset="86%" stop-color="#fbcfe8"/>
+      <stop offset="94%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL6" cx="50%" cy="100%" r="90%" fx="50%" fy="78%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fffef9"/>
+      <stop offset="38%" stop-color="#fefce8"/>
+      <stop offset="54%" stop-color="#fef3c7"/>
+      <stop offset="70%" stop-color="#fde68a"/>
+      <stop offset="82%" stop-color="#fef3c7"/>
+      <stop offset="92%" stop-color="#fefce8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL7" cx="50%" cy="100%" r="88%" fx="50%" fy="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fffef5"/>
+      <stop offset="48%" stop-color="#fef9e7"/>
+      <stop offset="68%" stop-color="#fef3c7"/>
+      <stop offset="85%" stop-color="#fefce8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+
+    <radialGradient id="petalL8" cx="50%" cy="100%" r="85%" fx="50%" fy="72%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fffefb"/>
+      <stop offset="65%" stop-color="#fffbeb"/>
+      <stop offset="88%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+
+    <radialGradient id="stamenGold" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="20%" stop-color="#fde047"/>
+      <stop offset="45%" stop-color="#facc15"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="90%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </radialGradient>
+
+    <radialGradient id="stamenCenter" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="30%" stop-color="#fcd34d"/>
+      <stop offset="55%" stop-color="#f59e0b"/>
+      <stop offset="80%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <radialGradient id="pistilGrad" cx="40%" cy="40%">
+      <stop offset="0%" stop-color="#bef264"/>
+      <stop offset="40%" stop-color="#84cc16"/>
+      <stop offset="70%" stop-color="#65a30d"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </radialGradient>
+
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="25%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#16a34a"/>
+      <stop offset="75%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+
+    <linearGradient id="leafHighlight" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="leafVein" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#166534" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="highlightStrong" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.92"/>
+      <stop offset="18%" stop-color="white" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="highlightMedium" x1="12%" y1="0%" x2="88%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="white" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="highlightSoft" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
+      <stop offset="35%" stop-color="white" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="pearlShimmer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="35%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#fdf4ff" stop-opacity="0.4"/>
+      <stop offset="65%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="veinDeep" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#86198f" stop-opacity="0.5"/>
+      <stop offset="25%" stop-color="#a21caf" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#c026d3" stop-opacity="0.22"/>
+      <stop offset="75%" stop-color="#d946ef" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="veinMedium" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#9d174d" stop-opacity="0.4"/>
+      <stop offset="35%" stop-color="#be185d" stop-opacity="0.25"/>
+      <stop offset="65%" stop-color="#db2777" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="veinSoft" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#db2777" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#ec4899" stop-opacity="0.15"/>
+      <stop offset="75%" stop-color="#f472b6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="edgeGlow" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.55"/>
+      <stop offset="10%" stop-color="#e879f9" stop-opacity="0.35"/>
+      <stop offset="25%" stop-color="#f0abfc" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#f0abfc" stop-opacity="0.15"/>
+      <stop offset="90%" stop-color="#e879f9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <linearGradient id="butterflyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0fe"/>
+      <stop offset="30%" stop-color="#f0abfc"/>
+      <stop offset="60%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#c026d3"/>
+    </linearGradient>
+
+    <linearGradient id="butterflyGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="30%" stop-color="#fde68a"/>
+      <stop offset="60%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <radialGradient id="ladybugRed" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="40%" stop-color="#ef4444"/>
+      <stop offset="70%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </radialGradient>
+
+    <linearGradient id="beeYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="dewRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3" stop-opacity="0.3"/>
+      <stop offset="25%" stop-color="#e9d5ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#bfdbfe" stop-opacity="0.2"/>
+      <stop offset="75%" stop-color="#bbf7d0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="petalShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+      <feOffset in="blur" dx="2" dy="7" result="offsetBlur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.22"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="innerGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dewdrop" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="sparkleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="leafShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset in="blur" dx="3" dy="5" result="offsetBlur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Petal Definitions -->
+    <g id="petalOuter">
+      <path d="M0,0 C-10,30 -28,70 -42,115 C-48,138 -54,162 -58,188 C-62,218 -63,248 -58,275 C-54,298 -46,318 -35,333 C-28,343 -20,350 -12,354 C-6,357 -2,358 0,358 C2,358 6,357 12,354 C20,350 28,343 35,333 C46,318 54,298 58,275 C63,248 62,218 58,188 C54,162 48,138 42,115 C28,70 10,30 0,0 Z" fill="url(#petalL1)"/>
+      <path d="M0,0 C-10,30 -28,70 -42,115 C-48,138 -54,162 -58,188 C-62,218 -63,248 -58,275 C-54,298 -46,318 -35,333 C-28,343 -20,350 -12,354 C-6,357 -2,358 0,358 C2,358 6,357 12,354 C20,350 28,343 35,333 C46,318 54,298 58,275 C63,248 62,218 58,188 C54,162 48,138 42,115 C28,70 10,30 0,0 Z" fill="url(#highlightMedium)"/>
+      <path d="M0,0 C-10,30 -28,70 -42,115 C-48,138 -54,162 -58,188 C-62,218 -63,248 -58,275 C-54,298 -46,318 -35,333 C-28,343 -20,350 -12,354 C-6,357 -2,358 0,358 C2,358 6,357 12,354 C20,350 28,343 35,333 C46,318 54,298 58,275 C63,248 62,218 58,188 C54,162 48,138 42,115 C28,70 10,30 0,0 Z" fill="url(#edgeGlow)" opacity="0.55"/>
+      <path d="M0,0 C-10,30 -28,70 -42,115 C-48,138 -54,162 -58,188 C-62,218 -63,248 -58,275 C-54,298 -46,318 -35,333 C-28,343 -20,350 -12,354 C-6,357 -2,358 0,358 C2,358 6,357 12,354 C20,350 28,343 35,333 C46,318 54,298 58,275 C63,248 62,218 58,188 C54,162 48,138 42,115 C28,70 10,30 0,0 Z" fill="url(#iridescentOuter)"/>
+      <path d="M0,10 Q-0.5,150 0,340" stroke="url(#veinDeep)" stroke-width="3.5" fill="none"/>
+      <path d="M0,50 Q-20,135 -32,260" stroke="url(#veinDeep)" stroke-width="1.8" fill="none" opacity="0.75"/>
+      <path d="M0,50 Q20,135 32,260" stroke="url(#veinDeep)" stroke-width="1.8" fill="none" opacity="0.75"/>
+      <path d="M0,90 Q-30,175 -45,290" stroke="url(#veinMedium)" stroke-width="1.2" fill="none" opacity="0.55"/>
+      <path d="M0,90 Q30,175 45,290" stroke="url(#veinMedium)" stroke-width="1.2" fill="none" opacity="0.55"/>
+      <path d="M-10,70 Q-25,130 -35,200" stroke="url(#veinSoft)" stroke-width="0.8" fill="none" opacity="0.45"/>
+      <path d="M10,70 Q25,130 35,200" stroke="url(#veinSoft)" stroke-width="0.8" fill="none" opacity="0.45"/>
+      <path d="M-5,120 Q-18,180 -25,250" stroke="url(#veinSoft)" stroke-width="0.5" fill="none" opacity="0.35"/>
+      <path d="M5,120 Q18,180 25,250" stroke="url(#veinSoft)" stroke-width="0.5" fill="none" opacity="0.35"/>
+    </g>
+
+    <g id="petalMedLarge">
+      <path d="M0,0 C-9,28 -26,68 -40,112 C-46,135 -52,160 -55,186 C-58,216 -57,244 -52,268 C-47,290 -38,308 -26,320 C-18,328 -10,333 0,335 C10,333 18,328 26,320 C38,308 47,290 52,268 C57,244 58,216 55,186 C52,160 46,135 40,112 C26,68 9,28 0,0 Z" fill="url(#petalL2)"/>
+      <path d="M0,0 C-9,28 -26,68 -40,112 C-46,135 -52,160 -55,186 C-58,216 -57,244 -52,268 C-47,290 -38,308 -26,320 C-18,328 -10,333 0,335 C10,333 18,328 26,320 C38,308 47,290 52,268 C57,244 58,216 55,186 C52,160 46,135 40,112 C26,68 9,28 0,0 Z" fill="url(#highlightMedium)"/>
+      <path d="M0,8 Q-0.3,130 0,315" stroke="url(#veinDeep)" stroke-width="2.8" fill="none"/>
+      <path d="M0,48 Q-16,115 -28,225" stroke="url(#veinMedium)" stroke-width="1.4" fill="none" opacity="0.65"/>
+      <path d="M0,48 Q16,115 28,225" stroke="url(#veinMedium)" stroke-width="1.4" fill="none" opacity="0.65"/>
+      <path d="M-8,80 Q-22,150 -32,230" stroke="url(#veinSoft)" stroke-width="0.7" fill="none" opacity="0.4"/>
+      <path d="M8,80 Q22,150 32,230" stroke="url(#veinSoft)" stroke-width="0.7" fill="none" opacity="0.4"/>
+    </g>
+
+    <g id="petalMedium">
+      <path d="M0,0 C-7,24 -22,58 -36,98 C-42,122 -48,148 -50,175 C-52,206 -50,235 -44,258 C-38,280 -28,296 -16,306 C-9,312 0,315 0,315 C0,315 9,312 16,306 C28,296 38,280 44,258 C50,235 52,206 50,175 C48,148 42,122 36,98 C22,58 7,24 0,0 Z" fill="url(#petalL3)"/>
+      <path d="M0,0 C-7,24 -22,58 -36,98 C-42,122 -48,148 -50,175 C-52,206 -50,235 -44,258 C-38,280 -28,296 -16,306 C-9,312 0,315 0,315 C0,315 9,312 16,306 C28,296 38,280 44,258 C50,235 52,206 50,175 C48,148 42,122 36,98 C22,58 7,24 0,0 Z" fill="url(#highlightMedium)"/>
+      <path d="M0,6 Q0,110 0,295" stroke="url(#veinMedium)" stroke-width="2.2" fill="none"/>
+      <path d="M0,40 Q-14,100 -24,200" stroke="url(#veinSoft)" stroke-width="1.1" fill="none" opacity="0.55"/>
+      <path d="M0,40 Q14,100 24,200" stroke="url(#veinSoft)" stroke-width="1.1" fill="none" opacity="0.55"/>
+    </g>
+
+    <g id="petalInnerMed">
+      <path d="M0,0 C-6,20 -19,50 -30,85 C-38,115 -44,148 -44,178 C-44,210 -38,238 -28,258 C-20,274 -10,284 0,288 C10,284 20,274 28,258 C38,238 44,210 44,178 C44,148 38,115 30,85 C19,50 6,20 0,0 Z" fill="url(#petalL4)"/>
+      <path d="M0,0 C-6,20 -19,50 -30,85 C-38,115 -44,148 -44,178 C-44,210 -38,238 -28,258 C-20,274 -10,284 0,288 C10,284 20,274 28,258 C38,238 44,210 44,178 C44,148 38,115 30,85 C19,50 6,20 0,0 Z" fill="url(#highlightSoft)"/>
+      <path d="M0,5 Q0,95 0,270" stroke="url(#veinMedium)" stroke-width="2" fill="none" opacity="0.88"/>
+      <path d="M0,35 Q-12,90 -20,180" stroke="url(#veinSoft)" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M0,35 Q12,90 20,180" stroke="url(#veinSoft)" stroke-width="0.9" fill="none" opacity="0.45"/>
+    </g>
+
+    <g id="petalInner">
+      <path d="M0,0 C-5,17 -16,42 -26,72 C-34,100 -40,132 -40,162 C-40,194 -34,222 -24,242 C-16,258 -8,268 0,272 C8,268 16,258 24,242 C34,222 40,194 40,162 C40,132 34,100 26,72 C16,42 5,17 0,0 Z" fill="url(#petalL5)"/>
+      <path d="M0,0 C-5,17 -16,42 -26,72 C-34,100 -40,132 -40,162 C-40,194 -34,222 -24,242 C-16,258 -8,268 0,272 C8,268 16,258 24,242 C34,222 40,194 40,162 C40,132 34,100 26,72 C16,42 5,17 0,0 Z" fill="url(#highlightSoft)"/>
+      <path d="M0,4 Q0,85 0,255" stroke="url(#veinSoft)" stroke-width="1.7" fill="none" opacity="0.75"/>
+    </g>
+
+    <g id="petalSmall">
+      <path d="M0,0 C-4,14 -14,36 -22,62 C-30,90 -35,120 -34,148 C-33,178 -28,204 -18,222 C-10,236 0,242 0,242 C0,242 10,236 18,222 C28,204 33,178 34,148 C35,120 30,90 22,62 C14,36 4,14 0,0 Z" fill="url(#petalL6)"/>
+      <path d="M0,0 C-4,14 -14,36 -22,62 C-30,90 -35,120 -34,148 C-33,178 -28,204 -18,222 C-10,236 0,242 0,242 C0,242 10,236 18,222 C28,204 33,178 34,148 C35,120 30,90 22,62 C14,36 4,14 0,0 Z" fill="url(#highlightStrong)" opacity="0.68"/>
+    </g>
+
+    <g id="petalCenter">
+      <path d="M0,0 C-3,12 -11,30 -18,52 C-25,75 -30,102 -28,128 C-26,156 -20,180 -10,196 C-4,205 0,210 0,210 C0,210 4,205 10,196 C20,180 26,156 28,128 C30,102 25,75 18,52 C11,30 3,12 0,0 Z" fill="url(#petalL7)"/>
+      <path d="M0,0 C-3,12 -11,30 -18,52 C-25,75 -30,102 -28,128 C-26,156 -20,180 -10,196 C-4,205 0,210 0,210 C0,210 4,205 10,196 C20,180 26,156 28,128 C30,102 25,75 18,52 C11,30 3,12 0,0 Z" fill="url(#highlightStrong)" opacity="0.78"/>
+    </g>
+
+    <g id="petalInnermost">
+      <path d="M0,0 C-2.5,10 -9,25 -15,44 C-21,64 -25,88 -23,110 C-21,134 -16,154 -8,168 C-3,176 0,180 0,180 C0,180 3,176 8,168 C16,154 21,134 23,110 C25,88 21,64 15,44 C9,25 2.5,10 0,0 Z" fill="url(#petalL8)"/>
+      <path d="M0,0 C-2.5,10 -9,25 -15,44 C-21,64 -25,88 -23,110 C-21,134 -16,154 -8,168 C-3,176 0,180 0,180 C0,180 3,176 8,168 C16,154 21,134 23,110 C25,88 21,64 15,44 C9,25 2.5,10 0,0 Z" fill="url(#highlightStrong)" opacity="0.88"/>
+    </g>
+
+    <g id="butterfly">
+      <ellipse cx="0" cy="0" rx="1.8" ry="9" fill="#581c87"/>
+      <path d="M0,-7 Q-14,-14 -21,-5 Q-26,6 -14,10 Q-6,12 0,2" fill="url(#butterflyGrad)" opacity="0.92"/>
+      <path d="M0,-7 Q14,-14 21,-5 Q26,6 14,10 Q6,12 0,2" fill="url(#butterflyGrad)" opacity="0.92"/>
+      <path d="M0,2 Q-10,7 -12,14 Q-10,19 -4,16 Q0,14 0,9" fill="#f0abfc" opacity="0.85"/>
+      <path d="M0,2 Q10,7 12,14 Q10,19 4,16 Q0,14 0,9" fill="#f0abfc" opacity="0.85"/>
+      <circle cx="-16" cy="-3" r="3" fill="white" opacity="0.55"/>
+      <circle cx="16" cy="-3" r="3" fill="white" opacity="0.55"/>
+      <circle cx="-16" cy="-3" r="1.5" fill="#c026d3" opacity="0.4"/>
+      <circle cx="16" cy="-3" r="1.5" fill="#c026d3" opacity="0.4"/>
+      <circle cx="-9" cy="11" r="1.5" fill="white" opacity="0.5"/>
+      <circle cx="9" cy="11" r="1.5" fill="white" opacity="0.5"/>
+      <ellipse cx="-12" cy="2" rx="2" ry="1.5" fill="#fce7f3" opacity="0.6"/>
+      <ellipse cx="12" cy="2" rx="2" ry="1.5" fill="#fce7f3" opacity="0.6"/>
+      <line x1="-1" y1="-9" x2="-5" y2="-16" stroke="#581c87" stroke-width="1" stroke-linecap="round"/>
+      <line x1="1" y1="-9" x2="5" y2="-16" stroke="#581c87" stroke-width="1" stroke-linecap="round"/>
+      <circle cx="-5" cy="-16" r="1.3" fill="#581c87"/>
+      <circle cx="5" cy="-16" r="1.3" fill="#581c87"/>
+    </g>
+
+    <g id="butterflyGold">
+      <ellipse cx="0" cy="0" rx="1.5" ry="7" fill="#92400e"/>
+      <path d="M0,-6 Q-12,-11 -17,-4 Q-21,5 -11,8 Q-5,10 0,2" fill="url(#butterflyGrad2)" opacity="0.92"/>
+      <path d="M0,-6 Q12,-11 17,-4 Q21,5 11,8 Q5,10 0,2" fill="url(#butterflyGrad2)" opacity="0.92"/>
+      <path d="M0,2 Q-8,6 -10,11 Q-8,15 -3,13 Q0,11 0,7" fill="#fde68a" opacity="0.85"/>
+      <path d="M0,2 Q8,6 10,11 Q8,15 3,13 Q0,11 0,7" fill="#fde68a" opacity="0.85"/>
+      <circle cx="-13" cy="-2" r="2.5" fill="white" opacity="0.55"/>
+      <circle cx="13" cy="-2" r="2.5" fill="white" opacity="0.55"/>
+      <circle cx="-13" cy="-2" r="1.2" fill="#f59e0b" opacity="0.5"/>
+      <circle cx="13" cy="-2" r="1.2" fill="#f59e0b" opacity="0.5"/>
+      <line x1="-1" y1="-7" x2="-4" y2="-13" stroke="#92400e" stroke-width="0.8" stroke-linecap="round"/>
+      <line x1="1" y1="-7" x2="4" y2="-13" stroke="#92400e" stroke-width="0.8" stroke-linecap="round"/>
+      <circle cx="-4" cy="-13" r="1" fill="#92400e"/>
+      <circle cx="4" cy="-13" r="1" fill="#92400e"/>
+    </g>
+
+    <g id="ladybug">
+      <ellipse cx="0" cy="0" rx="8" ry="10" fill="url(#ladybugRed)"/>
+      <path d="M0,-10 L0,10" stroke="#1a1a1a" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-11" rx="5" ry="4" fill="#1a1a1a"/>
+      <circle cx="-4" cy="-4" r="2" fill="#1a1a1a"/>
+      <circle cx="4" cy="-4" r="2" fill="#1a1a1a"/>
+      <circle cx="-3" cy="4" r="1.8" fill="#1a1a1a"/>
+      <circle cx="3" cy="4" r="1.8" fill="#1a1a1a"/>
+      <circle cx="0" cy="7" r="1.5" fill="#1a1a1a"/>
+      <ellipse cx="-2" cy="-2" rx="2.5" ry="3" fill="white" opacity="0.35"/>
+      <line x1="-3" y1="-14" x2="-5" y2="-17" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+      <line x1="3" y1="-14" x2="5" y2="-17" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+    </g>
+
+    <g id="bee">
+      <ellipse cx="0" cy="0" rx="7" ry="9" fill="url(#beeYellow)"/>
+      <ellipse cx="0" cy="-2" rx="7" ry="3" fill="#1a1a1a" opacity="0.9"/>
+      <ellipse cx="0" cy="4" rx="6" ry="2.5" fill="#1a1a1a" opacity="0.9"/>
+      <ellipse cx="0" cy="-10" rx="5" ry="4" fill="#1a1a1a"/>
+      <ellipse cx="-7" cy="-3" rx="5" ry="8" fill="white" opacity="0.7" transform="rotate(-20)"/>
+      <ellipse cx="7" cy="-3" rx="5" ry="8" fill="white" opacity="0.7" transform="rotate(20)"/>
+      <ellipse cx="-1.5" cy="0" rx="2" ry="4" fill="white" opacity="0.3"/>
+      <line x1="-2" y1="-13" x2="-4" y2="-17" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+      <line x1="2" y1="-13" x2="4" y2="-17" stroke="#1a1a1a" stroke-width="0.8" stroke-linecap="round"/>
+      <circle cx="-4" cy="-17" r="1" fill="#1a1a1a"/>
+      <circle cx="4" cy="-17" r="1" fill="#1a1a1a"/>
+    </g>
+
+    <g id="peonyLeaf">
+      <path d="M0,0 C-5,15 -20,45 -35,80 C-45,105 -50,130 -48,150 C-46,168 -38,180 -25,185 C-15,188 -5,185 0,178 C5,185 15,188 25,185 C38,180 46,168 48,150 C50,130 45,105 35,80 C20,45 5,15 0,0 Z" fill="url(#leafGradient)"/>
+      <path d="M0,0 C-5,15 -20,45 -35,80 C-45,105 -50,130 -48,150 C-46,168 -38,180 -25,185 C-15,188 -5,185 0,178 C5,185 15,188 25,185 C38,180 46,168 48,150 C50,130 45,105 35,80 C20,45 5,15 0,0 Z" fill="url(#leafHighlight)"/>
+      <path d="M0,5 Q0,90 0,170" stroke="url(#leafVein)" stroke-width="2" fill="none"/>
+      <path d="M0,30 Q-15,70 -30,120" stroke="url(#leafVein)" stroke-width="1.2" fill="none" opacity="0.7"/>
+      <path d="M0,30 Q15,70 30,120" stroke="url(#leafVein)" stroke-width="1.2" fill="none" opacity="0.7"/>
+      <path d="M0,60 Q-25,100 -38,145" stroke="url(#leafVein)" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M0,60 Q25,100 38,145" stroke="url(#leafVein)" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M-8,45 Q-22,80 -32,115" stroke="url(#leafVein)" stroke-width="0.5" fill="none" opacity="0.4"/>
+      <path d="M8,45 Q22,80 32,115" stroke="url(#leafVein)" stroke-width="0.5" fill="none" opacity="0.4"/>
+    </g>
+
+    <g id="floatingPetal">
+      <path d="M0,0 C-4,8 -8,20 -6,28 C-4,35 0,38 0,38 C0,38 4,35 6,28 C8,20 4,8 0,0 Z" fill="url(#petalL3)"/>
+      <path d="M0,0 C-4,8 -8,20 -6,28 C-4,35 0,38 0,38 C0,38 4,35 6,28 C8,20 4,8 0,0 Z" fill="url(#highlightSoft)"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="800" fill="#fdf2f8"/>
+  <rect width="750" height="800" fill="url(#bgGrad)" opacity="0.5"/>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="20%" stop-color="#fce7f3"/>
+      <stop offset="40%" stop-color="#f5d0fe"/>
+      <stop offset="60%" stop-color="#e9d5ff"/>
+      <stop offset="80%" stop-color="#ddd6fe"/>
+      <stop offset="100%" stop-color="#fffbeb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft ambient glows -->
+  <ellipse cx="112" cy="120" rx="180" ry="140" fill="#c4b5fd" opacity="0.2"/>
+  <ellipse cx="637" cy="160" rx="190" ry="150" fill="#fbcfe8" opacity="0.22"/>
+  <ellipse cx="600" cy="640" rx="160" ry="120" fill="#fed7aa" opacity="0.16"/>
+  <ellipse cx="150" cy="600" rx="150" ry="110" fill="#a7f3d0" opacity="0.13"/>
+  <ellipse cx="375" cy="720" rx="140" ry="90" fill="#93c5fd" opacity="0.1"/>
+  <ellipse cx="375" cy="40" rx="120" ry="70" fill="#fde047" opacity="0.08"/>
+
+  <!-- Bokeh circles -->
+  <circle cx="60" cy="96" r="50" fill="#fbcfe8" opacity="0.18" filter="url(#softGlow)"/>
+  <circle cx="660" cy="144" r="60" fill="#c4b5fd" opacity="0.15" filter="url(#softGlow)"/>
+  <circle cx="90" cy="576" r="70" fill="#fed7aa" opacity="0.13" filter="url(#softGlow)"/>
+  <circle cx="615" cy="624" r="55" fill="#fbcfe8" opacity="0.16" filter="url(#softGlow)"/>
+  <circle cx="390" cy="64" r="45" fill="#a7f3d0" opacity="0.13" filter="url(#softGlow)"/>
+  <circle cx="22" cy="336" r="40" fill="#f472b6" opacity="0.1" filter="url(#softGlow)"/>
+  <circle cx="712" cy="416" r="48" fill="#c4b5fd" opacity="0.13" filter="url(#softGlow)"/>
+  <circle cx="210" cy="736" r="52" fill="#fbcfe8" opacity="0.14" filter="url(#softGlow)"/>
+  <circle cx="540" cy="24" r="35" fill="#fed7aa" opacity="0.11" filter="url(#softGlow)"/>
+  <circle cx="465" cy="704" r="58" fill="#a7f3d0" opacity="0.1" filter="url(#softGlow)"/>
+  <circle cx="262" cy="200" r="33" fill="#93c5fd" opacity="0.09" filter="url(#softGlow)"/>
+  <circle cx="510" cy="280" r="38" fill="#fde047" opacity="0.08" filter="url(#softGlow)"/>
+  <circle cx="135" cy="440" r="42" fill="#e879f9" opacity="0.09" filter="url(#softGlow)"/>
+  <circle cx="585" cy="496" r="35" fill="#f472b6" opacity="0.1" filter="url(#softGlow)"/>
+
+  <!-- Pollen particles -->
+  <circle cx="37.5" cy="80.0" r="2" fill="#fef3c7" opacity="0.3"/>
+  <circle cx="165.0" cy="264.0" r="3" fill="#fde047" opacity="0.4"/>
+  <circle cx="292.5" cy="448.00000000000006" r="4" fill="#fef9c3" opacity="0.5"/>
+  <circle cx="420.00000000000006" cy="632.0" r="5" fill="#fbcfe8" opacity="0.6000000000000001"/>
+  <circle cx="547.5" cy="16.0" r="2" fill="#f0abfc" opacity="0.7"/>
+  <circle cx="675.0" cy="200.0" r="3" fill="#fff" opacity="0.3"/>
+  <circle cx="52.50000000000001" cy="384.0" r="4" fill="#fef3c7" opacity="0.4"/>
+  <circle cx="180.0" cy="568.0" r="5" fill="#fde047" opacity="0.5"/>
+  <circle cx="307.5" cy="752.0" r="2" fill="#fef9c3" opacity="0.6000000000000001"/>
+  <circle cx="434.99999999999994" cy="136.0" r="3" fill="#fbcfe8" opacity="0.7"/>
+  <circle cx="562.5" cy="320.0" r="4" fill="#f0abfc" opacity="0.3"/>
+  <circle cx="690.0" cy="504.0" r="5" fill="#fff" opacity="0.4"/>
+  <circle cx="67.5" cy="688.0" r="2" fill="#fef3c7" opacity="0.5"/>
+  <circle cx="195.0" cy="72.0" r="3" fill="#fde047" opacity="0.6000000000000001"/>
+  <circle cx="322.5" cy="256.0" r="4" fill="#fef9c3" opacity="0.7"/>
+  <circle cx="450.0" cy="440.00000000000006" r="5" fill="#fbcfe8" opacity="0.3"/>
+  <circle cx="577.5" cy="624.0" r="2" fill="#f0abfc" opacity="0.4"/>
+  <circle cx="705.0" cy="8.0" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="82.5" cy="192.0" r="4" fill="#fef3c7" opacity="0.6000000000000001"/>
+  <circle cx="210.00000000000003" cy="376.0" r="5" fill="#fde047" opacity="0.7"/>
+  <circle cx="337.5" cy="560.0" r="2" fill="#fef9c3" opacity="0.3"/>
+  <circle cx="465.0" cy="744.0" r="3" fill="#fbcfe8" opacity="0.4"/>
+  <circle cx="592.5" cy="128.0" r="4" fill="#f0abfc" opacity="0.5"/>
+  <circle cx="720.0" cy="312.0" r="5" fill="#fff" opacity="0.6000000000000001"/>
+  <circle cx="97.5" cy="496.0" r="2" fill="#fef3c7" opacity="0.7"/>
+  <circle cx="225.0" cy="680.0" r="3" fill="#fde047" opacity="0.3"/>
+  <circle cx="352.5" cy="64.0" r="4" fill="#fef9c3" opacity="0.4"/>
+  <circle cx="480.0" cy="248.0" r="5" fill="#fbcfe8" opacity="0.5"/>
+  <circle cx="607.5" cy="432.0" r="2" fill="#f0abfc" opacity="0.6000000000000001"/>
+  <circle cx="735.0" cy="616.0" r="3" fill="#fff" opacity="0.7"/>
+  <circle cx="112.5" cy="0.0" r="4" fill="#fef3c7" opacity="0.3"/>
+  <circle cx="240.0" cy="184.0" r="5" fill="#fde047" opacity="0.4"/>
+  <circle cx="367.5" cy="368.0" r="2" fill="#fef9c3" opacity="0.5"/>
+  <circle cx="495.0" cy="552.0" r="3" fill="#fbcfe8" opacity="0.6000000000000001"/>
+  <circle cx="622.5" cy="736.0" r="4" fill="#f0abfc" opacity="0.7"/>
+  <circle cx="0.0" cy="120.0" r="5" fill="#fff" opacity="0.3"/>
+  <circle cx="127.50000000000001" cy="304.0" r="2" fill="#fef3c7" opacity="0.4"/>
+  <circle cx="255.00000000000003" cy="488.0" r="3" fill="#fde047" opacity="0.5"/>
+  <circle cx="382.5" cy="672.0" r="4" fill="#fef9c3" opacity="0.6000000000000001"/>
+  <circle cx="510.00000000000006" cy="56.00000000000001" r="5" fill="#fbcfe8" opacity="0.7"/>
+
+  <!-- Leaves -->
+  <g transform="translate(375, 400)">
+    <g transform="translate(-200, 180) rotate(-35) scale(1.3)" filter="url(#leafShadow)">
+      <use href="#peonyLeaf"/>
+    </g>
+    <g transform="translate(200, 175) rotate(40) scale(1.25)" filter="url(#leafShadow)">
+      <use href="#peonyLeaf"/>
+    </g>
+    <g transform="translate(-130, 220) rotate(-55) scale(1)" filter="url(#leafShadow)">
+      <use href="#peonyLeaf"/>
+    </g>
+    <g transform="translate(140, 210) rotate(50) scale(1.05)" filter="url(#leafShadow)">
+      <use href="#peonyLeaf"/>
+    </g>
+    <g transform="translate(0, 250) rotate(5) scale(0.9)" filter="url(#leafShadow)">
+      <use href="#peonyLeaf"/>
+    </g>
+  </g>
+
+  <!-- Main Flower -->
+  <g transform="translate(375, 380)">
+    <g transform="rotate(0.0)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(20.363636363636363)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(32.72727272727273)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(53.09090909090909)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(65.45454545454545)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(85.81818181818181)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(98.18181818181819)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(118.54545454545455)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(130.9090909090909)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(151.27272727272728)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(163.63636363636363)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(184.0)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(196.36363636363637)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(216.72727272727272)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(229.0909090909091)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(249.45454545454544)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(261.8181818181818)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(282.1818181818182)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(294.54545454545456)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(314.9090909090909)" filter="url(#petalShadow)">
+      <g transform="scale(1.032, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(327.27272727272725)" filter="url(#petalShadow)">
+      <g transform="scale(1.044, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(347.6363636363636)" filter="url(#petalShadow)">
+      <g transform="scale(1.02, 1)">
+        <use href="#petalOuter"/>
+      </g>
+    </g>
+    <g transform="rotate(10.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(30.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(50.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(70.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(90.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(110.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(130.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(150.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(170.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(190.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(210.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(230.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(250.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(270.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(290.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(310.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(330.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(350.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.96)">
+        <use href="#petalMedLarge"/>
+      </g>
+    </g>
+    <g transform="rotate(6.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(30.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(54.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(78.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(102.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(126.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(150.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(174.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(198.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(222.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(246.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(270.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(294.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(318.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(342.0)" filter="url(#petalShadow)">
+      <g transform="scale(0.94)">
+        <use href="#petalMedium"/>
+      </g>
+    </g>
+    <g transform="rotate(14.0)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(41.69230769230769)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(69.38461538461539)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(97.07692307692308)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(124.76923076923077)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(152.46153846153845)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(180.15384615384616)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(207.84615384615387)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(235.53846153846155)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(263.2307692307692)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(290.9230769230769)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(318.61538461538464)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(346.3076923076923)" filter="url(#softGlow)">
+      <g transform="scale(0.92)">
+        <use href="#petalInnerMed"/>
+      </g>
+    </g>
+    <g transform="rotate(16.0)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(48.72727272727273)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(81.45454545454545)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(114.18181818181819)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(146.9090909090909)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(179.63636363636363)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(212.36363636363637)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(245.0909090909091)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(277.8181818181818)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(310.54545454545456)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(343.27272727272725)" filter="url(#softGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalInner"/>
+      </g>
+    </g>
+    <g transform="rotate(20.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(60.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(100.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(140.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(180.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(220.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(260.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(300.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(340.0)" filter="url(#softGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalSmall"/>
+      </g>
+    </g>
+    <g transform="rotate(22.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(67.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(112.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(157.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(202.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(247.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(292.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(337.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.90)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(28.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(79.42857142857143)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(130.85714285714286)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(182.28571428571428)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(233.71428571428572)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(285.14285714285717)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(336.57142857142856)" filter="url(#innerGlow)">
+      <g transform="scale(0.86)">
+        <use href="#petalCenter"/>
+      </g>
+    </g>
+    <g transform="rotate(30.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(90.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(150.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(210.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(270.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(330.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.88)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(36.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.82)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(108.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.82)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(180.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.82)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(252.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.82)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(324.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.82)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(45.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.72)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(135.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.72)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(225.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.72)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+    <g transform="rotate(315.0)" filter="url(#innerGlow)">
+      <g transform="scale(0.72)">
+        <use href="#petalInnermost"/>
+      </g>
+    </g>
+
+    <!-- Center Stamen -->
+    <g>
+      <g>
+        <path d="M19.84,0.00 Q39.92,0.60 53.32,0.00" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="74.00" cy="0.00" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(90.0 74.00 0.00)" filter="url(#softGlow)"/>
+        <ellipse cx="72.20" cy="-1.20" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(90.0 74.00 0.00)"/>
+      </g>
+      <g>
+        <path d="M19.41,4.12 Q38.92,8.88 52.15,11.09" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="72.38" cy="15.39" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(102.0 72.38 15.39)" filter="url(#softGlow)"/>
+        <ellipse cx="70.58" cy="14.19" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(102.0 72.38 15.39)"/>
+      </g>
+      <g>
+        <path d="M18.12,8.07 Q36.22,16.78 48.71,21.69" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="67.60" cy="30.10" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(114.0 67.60 30.10)" filter="url(#softGlow)"/>
+        <ellipse cx="65.80" cy="28.90" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(114.0 67.60 30.10)"/>
+      </g>
+      <g>
+        <path d="M16.05,11.66 Q31.94,23.95 43.14,31.34" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="59.87" cy="43.50" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(126.0 59.87 43.50)" filter="url(#softGlow)"/>
+        <ellipse cx="58.07" cy="42.30" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(126.0 59.87 43.50)"/>
+      </g>
+      <g>
+        <path d="M13.28,14.74 Q26.26,30.06 35.68,39.62" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="49.52" cy="54.99" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(138.0 49.52 54.99)" filter="url(#softGlow)"/>
+        <ellipse cx="47.72" cy="53.79" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(138.0 49.52 54.99)"/>
+      </g>
+      <g>
+        <path d="M9.92,17.18 Q19.44,34.87 26.66,46.18" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="37.00" cy="64.09" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(150.0 37.00 64.09)" filter="url(#softGlow)"/>
+        <ellipse cx="35.20" cy="62.89" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(150.0 37.00 64.09)"/>
+      </g>
+      <g>
+        <path d="M6.13,18.87 Q11.77,38.15 16.48,50.71" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="22.87" cy="70.38" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(162.0 22.87 70.38)" filter="url(#softGlow)"/>
+        <ellipse cx="21.07" cy="69.18" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(162.0 22.87 70.38)"/>
+      </g>
+      <g>
+        <path d="M2.07,19.73 Q3.58,39.76 5.57,53.03" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="7.74" cy="73.59" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(174.0 7.74 73.59)" filter="url(#softGlow)"/>
+        <ellipse cx="5.94" cy="72.39" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(174.0 7.74 73.59)"/>
+      </g>
+      <g>
+        <path d="M-2.07,19.73 Q-4.77,39.63 -5.57,53.03" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-7.74" cy="73.59" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(186.0 -7.74 73.59)" filter="url(#softGlow)"/>
+        <ellipse cx="-9.54" cy="72.39" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(186.0 -7.74 73.59)"/>
+      </g>
+      <g>
+        <path d="M-6.13,18.87 Q-12.90,37.78 -16.48,50.71" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-22.87" cy="70.38" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(198.0 -22.87 70.38)" filter="url(#softGlow)"/>
+        <ellipse cx="-24.67" cy="69.18" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(198.0 -22.87 70.38)"/>
+      </g>
+      <g>
+        <path d="M-9.92,17.18 Q-20.48,34.27 -26.66,46.18" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-37.00" cy="64.09" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(210.0 -37.00 64.09)" filter="url(#softGlow)"/>
+        <ellipse cx="-38.80" cy="62.89" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(210.0 -37.00 64.09)"/>
+      </g>
+      <g>
+        <path d="M-13.28,14.74 Q-27.15,29.26 -35.68,39.62" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-49.52" cy="54.99" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(222.0 -49.52 54.99)" filter="url(#softGlow)"/>
+        <ellipse cx="-51.32" cy="53.79" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(222.0 -49.52 54.99)"/>
+      </g>
+      <g>
+        <path d="M-16.05,11.66 Q-32.64,22.98 -43.14,31.34" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-59.87" cy="43.50" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(234.0 -59.87 43.50)" filter="url(#softGlow)"/>
+        <ellipse cx="-61.67" cy="42.30" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(234.0 -59.87 43.50)"/>
+      </g>
+      <g>
+        <path d="M-18.12,8.07 Q-36.71,15.69 -48.71,21.69" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-67.60" cy="30.10" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(246.0 -67.60 30.10)" filter="url(#softGlow)"/>
+        <ellipse cx="-69.40" cy="28.90" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(246.0 -67.60 30.10)"/>
+      </g>
+      <g>
+        <path d="M-19.41,4.12 Q-39.17,7.71 -52.15,11.09" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-72.38" cy="15.39" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(258.0 -72.38 15.39)" filter="url(#softGlow)"/>
+        <ellipse cx="-74.18" cy="14.19" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(258.0 -72.38 15.39)"/>
+      </g>
+      <g>
+        <path d="M-19.84,0.00 Q-39.92,-0.60 -53.32,0.00" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-74.00" cy="0.00" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(270.0 -74.00 0.00)" filter="url(#softGlow)"/>
+        <ellipse cx="-75.80" cy="-1.20" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(270.0 -74.00 0.00)"/>
+      </g>
+      <g>
+        <path d="M-19.41,-4.12 Q-38.92,-8.88 -52.15,-11.09" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-72.38" cy="-15.39" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(282.0 -72.38 -15.39)" filter="url(#softGlow)"/>
+        <ellipse cx="-74.18" cy="-16.59" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(282.0 -72.38 -15.39)"/>
+      </g>
+      <g>
+        <path d="M-18.12,-8.07 Q-36.22,-16.78 -48.71,-21.69" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-67.60" cy="-30.10" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(294.0 -67.60 -30.10)" filter="url(#softGlow)"/>
+        <ellipse cx="-69.40" cy="-31.30" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(294.0 -67.60 -30.10)"/>
+      </g>
+      <g>
+        <path d="M-16.05,-11.66 Q-31.94,-23.95 -43.14,-31.34" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-59.87" cy="-43.50" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(306.0 -59.87 -43.50)" filter="url(#softGlow)"/>
+        <ellipse cx="-61.67" cy="-44.70" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(306.0 -59.87 -43.50)"/>
+      </g>
+      <g>
+        <path d="M-13.28,-14.74 Q-26.26,-30.06 -35.68,-39.62" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-49.52" cy="-54.99" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(318.0 -49.52 -54.99)" filter="url(#softGlow)"/>
+        <ellipse cx="-51.32" cy="-56.19" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(318.0 -49.52 -54.99)"/>
+      </g>
+      <g>
+        <path d="M-9.92,-17.18 Q-19.44,-34.87 -26.66,-46.18" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-37.00" cy="-64.09" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(330.0 -37.00 -64.09)" filter="url(#softGlow)"/>
+        <ellipse cx="-38.80" cy="-65.29" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(330.0 -37.00 -64.09)"/>
+      </g>
+      <g>
+        <path d="M-6.13,-18.87 Q-11.77,-38.15 -16.48,-50.71" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-22.87" cy="-70.38" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(342.0 -22.87 -70.38)" filter="url(#softGlow)"/>
+        <ellipse cx="-24.67" cy="-71.58" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(342.0 -22.87 -70.38)"/>
+      </g>
+      <g>
+        <path d="M-2.07,-19.73 Q-3.58,-39.76 -5.57,-53.03" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-7.74" cy="-73.59" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(354.0 -7.74 -73.59)" filter="url(#softGlow)"/>
+        <ellipse cx="-9.54" cy="-74.79" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(354.0 -7.74 -73.59)"/>
+      </g>
+      <g>
+        <path d="M2.07,-19.73 Q4.77,-39.63 5.57,-53.03" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="7.74" cy="-73.59" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(366.0 7.74 -73.59)" filter="url(#softGlow)"/>
+        <ellipse cx="5.94" cy="-74.79" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(366.0 7.74 -73.59)"/>
+      </g>
+      <g>
+        <path d="M6.13,-18.87 Q12.90,-37.78 16.48,-50.71" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="22.87" cy="-70.38" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(378.0 22.87 -70.38)" filter="url(#softGlow)"/>
+        <ellipse cx="21.07" cy="-71.58" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(378.0 22.87 -70.38)"/>
+      </g>
+      <g>
+        <path d="M9.92,-17.18 Q20.48,-34.27 26.66,-46.18" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="37.00" cy="-64.09" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(390.0 37.00 -64.09)" filter="url(#softGlow)"/>
+        <ellipse cx="35.20" cy="-65.29" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(390.0 37.00 -64.09)"/>
+      </g>
+      <g>
+        <path d="M13.28,-14.74 Q27.15,-29.26 35.68,-39.62" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="49.52" cy="-54.99" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(402.0 49.52 -54.99)" filter="url(#softGlow)"/>
+        <ellipse cx="47.72" cy="-56.19" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(402.0 49.52 -54.99)"/>
+      </g>
+      <g>
+        <path d="M16.05,-11.66 Q32.64,-22.98 43.14,-31.34" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="59.87" cy="-43.50" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(414.0 59.87 -43.50)" filter="url(#softGlow)"/>
+        <ellipse cx="58.07" cy="-44.70" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(414.0 59.87 -43.50)"/>
+      </g>
+      <g>
+        <path d="M18.12,-8.07 Q36.71,-15.69 48.71,-21.69" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="67.60" cy="-30.10" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(426.0 67.60 -30.10)" filter="url(#softGlow)"/>
+        <ellipse cx="65.80" cy="-31.30" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(426.0 67.60 -30.10)"/>
+      </g>
+      <g>
+        <path d="M19.41,-4.12 Q39.17,-7.71 52.15,-11.09" stroke="#84cc16" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="72.38" cy="-15.39" rx="6.5" ry="4.5" fill="url(#stamenGold)" transform="rotate(438.0 72.38 -15.39)" filter="url(#softGlow)"/>
+        <ellipse cx="70.58" cy="-16.59" rx="2.8" ry="1.8" fill="#fef9c3" opacity="0.88" transform="rotate(438.0 72.38 -15.39)"/>
+      </g>
+      <g>
+        <path d="M18.30,2.58 Q29.63,4.18 39.21,5.53" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="53.47" cy="7.54" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(90.0 53.47 7.54)"/>
+        <ellipse cx="52.27" cy="6.54" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(90.0 53.47 7.54)"/>
+      </g>
+      <g>
+        <path d="M16.83,7.63 Q27.25,12.35 36.07,16.35" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="49.18" cy="22.29" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(106.36363636363636 49.18 22.29)"/>
+        <ellipse cx="47.98" cy="21.29" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(106.36363636363636 49.18 22.29)"/>
+      </g>
+      <g>
+        <path d="M14.00,12.06 Q22.67,19.53 30.00,25.85" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="40.91" cy="35.25" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(122.72727272727272 40.91 35.25)"/>
+        <ellipse cx="39.71" cy="34.25" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(122.72727272727272 40.91 35.25)"/>
+      </g>
+      <g>
+        <path d="M10.03,15.52 Q16.25,25.12 21.50,33.25" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="29.32" cy="45.35" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(139.0909090909091 29.32 45.35)"/>
+        <ellipse cx="28.12" cy="44.35" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(139.0909090909091 29.32 45.35)"/>
+      </g>
+      <g>
+        <path d="M5.26,17.72 Q8.51,28.68 11.26,37.96" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="15.36" cy="51.77" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(155.45454545454544 15.36 51.77)"/>
+        <ellipse cx="14.16" cy="50.77" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(155.45454545454544 15.36 51.77)"/>
+      </g>
+      <g>
+        <path d="M0.05,18.48 Q0.08,29.92 0.11,39.60" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="0.15" cy="54.00" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(171.8181818181818 0.15 54.00)"/>
+        <ellipse cx="-1.05" cy="53.00" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(171.8181818181818 0.15 54.00)"/>
+      </g>
+      <g>
+        <path d="M-5.16,17.75 Q-8.35,28.73 -11.05,38.03" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-15.07" cy="51.86" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(188.1818181818182 -15.07 51.86)"/>
+        <ellipse cx="-16.27" cy="50.86" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(188.1818181818182 -15.07 51.86)"/>
+      </g>
+      <g>
+        <path d="M-9.95,15.57 Q-16.11,25.22 -21.32,33.37" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-29.07" cy="45.51" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(204.54545454545456 -29.07 45.51)"/>
+        <ellipse cx="-30.27" cy="44.51" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(204.54545454545456 -29.07 45.51)"/>
+      </g>
+      <g>
+        <path d="M-13.93,12.14 Q-22.56,19.66 -29.85,26.02" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-40.71" cy="35.48" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(220.9090909090909 -40.71 35.48)"/>
+        <ellipse cx="-41.91" cy="34.48" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(220.9090909090909 -40.71 35.48)"/>
+      </g>
+      <g>
+        <path d="M-16.79,7.72 Q-27.18,12.51 -35.98,16.55" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-49.06" cy="22.57" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(237.27272727272728 -49.06 22.57)"/>
+        <ellipse cx="-50.26" cy="21.57" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(237.27272727272728 -49.06 22.57)"/>
+      </g>
+      <g>
+        <path d="M-18.28,2.68 Q-29.60,4.34 -39.18,5.75" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-53.43" cy="7.83" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(253.63636363636363 -53.43 7.83)"/>
+        <ellipse cx="-54.63" cy="6.83" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(253.63636363636363 -53.43 7.83)"/>
+      </g>
+      <g>
+        <path d="M-18.30,-2.58 Q-29.63,-4.18 -39.21,-5.53" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-53.47" cy="-7.54" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(270.0 -53.47 -7.54)"/>
+        <ellipse cx="-54.67" cy="-8.54" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(270.0 -53.47 -7.54)"/>
+      </g>
+      <g>
+        <path d="M-16.83,-7.63 Q-27.25,-12.35 -36.07,-16.35" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-49.18" cy="-22.29" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(286.3636363636364 -49.18 -22.29)"/>
+        <ellipse cx="-50.38" cy="-23.29" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(286.3636363636364 -49.18 -22.29)"/>
+      </g>
+      <g>
+        <path d="M-14.00,-12.06 Q-22.67,-19.53 -30.00,-25.85" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-40.91" cy="-35.25" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(302.72727272727275 -40.91 -35.25)"/>
+        <ellipse cx="-42.11" cy="-36.25" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(302.72727272727275 -40.91 -35.25)"/>
+      </g>
+      <g>
+        <path d="M-10.03,-15.52 Q-16.25,-25.12 -21.50,-33.25" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-29.32" cy="-45.35" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(319.0909090909091 -29.32 -45.35)"/>
+        <ellipse cx="-30.52" cy="-46.35" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(319.0909090909091 -29.32 -45.35)"/>
+      </g>
+      <g>
+        <path d="M-5.26,-17.72 Q-8.51,-28.68 -11.26,-37.96" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-15.36" cy="-51.77" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(335.45454545454544 -15.36 -51.77)"/>
+        <ellipse cx="-16.56" cy="-52.77" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(335.45454545454544 -15.36 -51.77)"/>
+      </g>
+      <g>
+        <path d="M-0.05,-18.48 Q-0.08,-29.92 -0.11,-39.60" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="-0.15" cy="-54.00" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(351.8181818181818 -0.15 -54.00)"/>
+        <ellipse cx="-1.35" cy="-55.00" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(351.8181818181818 -0.15 -54.00)"/>
+      </g>
+      <g>
+        <path d="M5.16,-17.75 Q8.35,-28.73 11.05,-38.03" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="15.07" cy="-51.86" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(368.1818181818182 15.07 -51.86)"/>
+        <ellipse cx="13.87" cy="-52.86" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(368.1818181818182 15.07 -51.86)"/>
+      </g>
+      <g>
+        <path d="M9.95,-15.57 Q16.11,-25.22 21.32,-33.37" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="29.07" cy="-45.51" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(384.54545454545456 29.07 -45.51)"/>
+        <ellipse cx="27.87" cy="-46.51" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(384.54545454545456 29.07 -45.51)"/>
+      </g>
+      <g>
+        <path d="M13.93,-12.14 Q22.56,-19.66 29.85,-26.02" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="40.71" cy="-35.48" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(400.9090909090909 40.71 -35.48)"/>
+        <ellipse cx="39.51" cy="-36.48" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(400.9090909090909 40.71 -35.48)"/>
+      </g>
+      <g>
+        <path d="M16.79,-7.72 Q27.18,-12.51 35.98,-16.55" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="49.06" cy="-22.57" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(417.27272727272725 49.06 -22.57)"/>
+        <ellipse cx="47.86" cy="-23.57" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(417.27272727272725 49.06 -22.57)"/>
+      </g>
+      <g>
+        <path d="M18.28,-2.68 Q29.60,-4.34 39.18,-5.75" stroke="#a3e635" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+        <ellipse cx="53.43" cy="-7.83" rx="5.5" ry="3.5" fill="url(#stamenGold)" transform="rotate(433.6363636363636 53.43 -7.83)"/>
+        <ellipse cx="52.23" cy="-8.83" rx="2.2" ry="1.4" fill="#fef9c3" opacity="0.82" transform="rotate(433.6363636363636 53.43 -7.83)"/>
+      </g>
+      <g>
+        <circle cx="27.13" cy="6.93" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="25.93" cy="5.73" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="21.44" cy="18.01" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="20.24" cy="16.81" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="11.50" cy="25.53" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="10.30" cy="24.33" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-0.72" cy="27.99" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-1.92" cy="26.79" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-12.79" cy="24.91" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-13.99" cy="23.71" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-22.33" cy="16.89" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-23.53" cy="15.69" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-27.45" cy="5.53" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-28.65" cy="4.33" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-27.13" cy="-6.93" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-28.33" cy="-8.13" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-21.44" cy="-18.01" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-22.64" cy="-19.21" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="-11.50" cy="-25.53" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-12.70" cy="-26.73" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="0.72" cy="-27.99" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="-0.48" cy="-29.19" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="12.79" cy="-24.91" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="11.59" cy="-26.11" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="22.33" cy="-16.89" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="21.13" cy="-18.09" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <g>
+        <circle cx="27.45" cy="-5.53" r="4.5" fill="url(#stamenGold)" filter="url(#softGlow)"/>
+        <circle cx="26.25" cy="-6.73" r="1.8" fill="#fef9c3" opacity="0.88"/>
+      </g>
+      <circle r="24" fill="#fef9c3" opacity="0.5" filter="url(#softGlow)"/>
+      <circle r="20" fill="url(#stamenCenter)"/>
+      <ellipse cx="8.00" cy="0.00" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(0.0 8.00 0.00)"/>
+      <ellipse cx="5.66" cy="5.66" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(45.0 5.66 5.66)"/>
+      <ellipse cx="0.00" cy="8.00" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(90.0 0.00 8.00)"/>
+      <ellipse cx="-5.66" cy="5.66" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(135.0 -5.66 5.66)"/>
+      <ellipse cx="-8.00" cy="0.00" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(180.0 -8.00 0.00)"/>
+      <ellipse cx="-5.66" cy="-5.66" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(225.0 -5.66 -5.66)"/>
+      <ellipse cx="-0.00" cy="-8.00" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(270.0 -0.00 -8.00)"/>
+      <ellipse cx="5.66" cy="-5.66" rx="5" ry="6" fill="url(#pistilGrad)" transform="rotate(315.0 5.66 -5.66)"/>
+      <circle r="12" fill="#f59e0b"/>
+      <circle r="8" fill="#d97706"/>
+      <circle r="5" fill="#b45309"/>
+      <circle r="2.5" fill="#92400e"/>
+      <ellipse cx="-6" cy="-6" rx="8" ry="6" fill="white" opacity="0.58"/>
+      <ellipse cx="-5" cy="-5" rx="4" ry="3" fill="white" opacity="0.78"/>
+      <circle cx="16.00" cy="0.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="13.86" cy="8.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="8.00" cy="13.86" r="1.8" fill="#fef3c7"/>
+      <circle cx="0.00" cy="16.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="-8.00" cy="13.86" r="1.8" fill="#fef3c7"/>
+      <circle cx="-13.86" cy="8.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="-16.00" cy="0.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="-13.86" cy="-8.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="-8.00" cy="-13.86" r="1.8" fill="#fef3c7"/>
+      <circle cx="-0.00" cy="-16.00" r="1.8" fill="#fef3c7"/>
+      <circle cx="8.00" cy="-13.86" r="1.8" fill="#fef3c7"/>
+      <circle cx="13.86" cy="-8.00" r="1.8" fill="#fef3c7"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-58" cy="-210" rx="5.5" ry="4.84" fill="white" opacity="0.94"/>
+      <ellipse cx="-58" cy="-210" rx="4.95" ry="4.29" fill="url(#dewRainbow)"/>
+      <ellipse cx="-59.92" cy="-211.93" rx="2.64" ry="2.31" fill="white"/>
+      <ellipse cx="-57.01" cy="-208.46" rx="1.21" ry="0.88" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="65" cy="-195" rx="5" ry="4.40" fill="white" opacity="0.94"/>
+      <ellipse cx="65" cy="-195" rx="4.50" ry="3.90" fill="url(#dewRainbow)"/>
+      <ellipse cx="63.25" cy="-196.75" rx="2.40" ry="2.10" fill="white"/>
+      <ellipse cx="65.90" cy="-193.60" rx="1.10" ry="0.80" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-38" cy="-265" rx="4.5" ry="3.96" fill="white" opacity="0.94"/>
+      <ellipse cx="-38" cy="-265" rx="4.05" ry="3.51" fill="url(#dewRainbow)"/>
+      <ellipse cx="-39.58" cy="-266.57" rx="2.16" ry="1.89" fill="white"/>
+      <ellipse cx="-37.19" cy="-263.74" rx="0.99" ry="0.72" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="48" cy="-245" rx="4" ry="3.52" fill="white" opacity="0.94"/>
+      <ellipse cx="48" cy="-245" rx="3.60" ry="3.12" fill="url(#dewRainbow)"/>
+      <ellipse cx="46.60" cy="-246.40" rx="1.92" ry="1.68" fill="white"/>
+      <ellipse cx="48.72" cy="-243.88" rx="0.88" ry="0.64" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-78" cy="-165" rx="4.5" ry="3.96" fill="white" opacity="0.94"/>
+      <ellipse cx="-78" cy="-165" rx="4.05" ry="3.51" fill="url(#dewRainbow)"/>
+      <ellipse cx="-79.58" cy="-166.57" rx="2.16" ry="1.89" fill="white"/>
+      <ellipse cx="-77.19" cy="-163.74" rx="0.99" ry="0.72" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="85" cy="-155" rx="4.2" ry="3.70" fill="white" opacity="0.94"/>
+      <ellipse cx="85" cy="-155" rx="3.78" ry="3.28" fill="url(#dewRainbow)"/>
+      <ellipse cx="83.53" cy="-156.47" rx="2.02" ry="1.76" fill="white"/>
+      <ellipse cx="85.76" cy="-153.82" rx="0.92" ry="0.67" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-30" cy="-305" rx="4" ry="3.52" fill="white" opacity="0.94"/>
+      <ellipse cx="-30" cy="-305" rx="3.60" ry="3.12" fill="url(#dewRainbow)"/>
+      <ellipse cx="-31.40" cy="-306.40" rx="1.92" ry="1.68" fill="white"/>
+      <ellipse cx="-29.28" cy="-303.88" rx="0.88" ry="0.64" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="22" cy="-290" rx="3.5" ry="3.08" fill="white" opacity="0.94"/>
+      <ellipse cx="22" cy="-290" rx="3.15" ry="2.73" fill="url(#dewRainbow)"/>
+      <ellipse cx="20.77" cy="-291.23" rx="1.68" ry="1.47" fill="white"/>
+      <ellipse cx="22.63" cy="-289.02" rx="0.77" ry="0.56" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-95" cy="-110" rx="3.8" ry="3.34" fill="white" opacity="0.94"/>
+      <ellipse cx="-95" cy="-110" rx="3.42" ry="2.96" fill="url(#dewRainbow)"/>
+      <ellipse cx="-96.33" cy="-111.33" rx="1.82" ry="1.60" fill="white"/>
+      <ellipse cx="-94.32" cy="-108.94" rx="0.84" ry="0.61" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="100" cy="-100" rx="3.5" ry="3.08" fill="white" opacity="0.94"/>
+      <ellipse cx="100" cy="-100" rx="3.15" ry="2.73" fill="url(#dewRainbow)"/>
+      <ellipse cx="98.78" cy="-101.22" rx="1.68" ry="1.47" fill="white"/>
+      <ellipse cx="100.63" cy="-99.02" rx="0.77" ry="0.56" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-18" cy="-340" rx="3.2" ry="2.82" fill="white" opacity="0.94"/>
+      <ellipse cx="-18" cy="-340" rx="2.88" ry="2.50" fill="url(#dewRainbow)"/>
+      <ellipse cx="-19.12" cy="-341.12" rx="1.54" ry="1.34" fill="white"/>
+      <ellipse cx="-17.42" cy="-339.10" rx="0.70" ry="0.51" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="55" cy="-280" rx="3" ry="2.64" fill="white" opacity="0.94"/>
+      <ellipse cx="55" cy="-280" rx="2.70" ry="2.34" fill="url(#dewRainbow)"/>
+      <ellipse cx="53.95" cy="-281.05" rx="1.44" ry="1.26" fill="white"/>
+      <ellipse cx="55.54" cy="-279.16" rx="0.66" ry="0.48" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-110" cy="-70" rx="3" ry="2.64" fill="white" opacity="0.94"/>
+      <ellipse cx="-110" cy="-70" rx="2.70" ry="2.34" fill="url(#dewRainbow)"/>
+      <ellipse cx="-111.05" cy="-71.05" rx="1.44" ry="1.26" fill="white"/>
+      <ellipse cx="-109.46" cy="-69.16" rx="0.66" ry="0.48" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="115" cy="-60" rx="2.8" ry="2.46" fill="white" opacity="0.94"/>
+      <ellipse cx="115" cy="-60" rx="2.52" ry="2.18" fill="url(#dewRainbow)"/>
+      <ellipse cx="114.02" cy="-60.98" rx="1.34" ry="1.18" fill="white"/>
+      <ellipse cx="115.50" cy="-59.22" rx="0.62" ry="0.45" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="0" cy="-355" rx="4.5" ry="3.96" fill="white" opacity="0.94"/>
+      <ellipse cx="0" cy="-355" rx="4.05" ry="3.51" fill="url(#dewRainbow)"/>
+      <ellipse cx="-1.57" cy="-356.57" rx="2.16" ry="1.89" fill="white"/>
+      <ellipse cx="0.81" cy="-353.74" rx="0.99" ry="0.72" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="-70" cy="-240" rx="3.5" ry="3.08" fill="white" opacity="0.94"/>
+      <ellipse cx="-70" cy="-240" rx="3.15" ry="2.73" fill="url(#dewRainbow)"/>
+      <ellipse cx="-71.22" cy="-241.22" rx="1.68" ry="1.47" fill="white"/>
+      <ellipse cx="-69.37" cy="-239.02" rx="0.77" ry="0.56" fill="rgba(255,255,255,0.55)"/>
+    </g>
+    <g filter="url(#dewdrop)">
+      <ellipse cx="75" cy="-230" rx="3.2" ry="2.82" fill="white" opacity="0.94"/>
+      <ellipse cx="75" cy="-230" rx="2.88" ry="2.50" fill="url(#dewRainbow)"/>
+      <ellipse cx="73.88" cy="-231.12" rx="1.54" ry="1.34" fill="white"/>
+      <ellipse cx="75.58" cy="-229.10" rx="0.70" ry="0.51" fill="rgba(255,255,255,0.55)"/>
+    </g>
+
+    <!-- Butterflies -->
+    <g transform="translate(-150, -300) rotate(-30) scale(1.3)">
+      <use href="#butterfly"/>
+    </g>
+    <g transform="translate(170, -280) rotate(25) scale(1.1)">
+      <use href="#butterfly"/>
+    </g>
+    <g transform="translate(-190, -160) rotate(-50) scale(0.9)">
+      <use href="#butterflyGold"/>
+    </g>
+    <g transform="translate(195, -140) rotate(55) scale(0.85)">
+      <use href="#butterflyGold"/>
+    </g>
+
+    <!-- Ladybug -->
+    <g transform="translate(-125, -180) rotate(-15) scale(0.8)">
+      <use href="#ladybug"/>
+    </g>
+
+    <!-- Bee -->
+    <g transform="translate(130, -205) rotate(10) scale(0.75)">
+      <use href="#bee"/>
+    </g>
+    <g transform="translate(-130, -340)" filter="url(#sparkleGlow)">
+      <path d="M0,-16 L3.84,-3.84 L16,0 L3.84,3.84 L0,16 L-3.84,3.84 L-16,0 L-3.84,-3.84 Z" fill="#f0abfc" opacity="0.88"/>
+      <circle r="4.48" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(140, -330)" filter="url(#sparkleGlow)">
+      <path d="M0,-14 L3.36,-3.36 L14,0 L3.36,3.36 L0,14 L-3.36,3.36 L-14,0 L-3.36,-3.36 Z" fill="#fde047" opacity="0.88"/>
+      <circle r="3.92" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(-175, -240)" filter="url(#sparkleGlow)">
+      <path d="M0,-12 L2.88,-2.88 L12,0 L2.88,2.88 L0,12 L-2.88,2.88 L-12,0 L-2.88,-2.88 Z" fill="#93c5fd" opacity="0.88"/>
+      <circle r="3.36" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(185, -220)" filter="url(#sparkleGlow)">
+      <path d="M0,-13 L3.12,-3.12 L13,0 L3.12,3.12 L0,13 L-3.12,3.12 L-13,0 L-3.12,-3.12 Z" fill="#a5f3fc" opacity="0.88"/>
+      <circle r="3.64" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(-115, -375)" filter="url(#sparkleGlow)">
+      <path d="M0,-10 L2.40,-2.40 L10,0 L2.40,2.40 L0,10 L-2.40,2.40 L-10,0 L-2.40,-2.40 Z" fill="#f0abfc" opacity="0.88"/>
+      <circle r="2.80" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(125, -365)" filter="url(#sparkleGlow)">
+      <path d="M0,-11 L2.64,-2.64 L11,0 L2.64,2.64 L0,11 L-2.64,2.64 L-11,0 L-2.64,-2.64 Z" fill="#fde047" opacity="0.88"/>
+      <circle r="3.08" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(-200, -120)" filter="url(#sparkleGlow)">
+      <path d="M0,-9 L2.16,-2.16 L9,0 L2.16,2.16 L0,9 L-2.16,2.16 L-9,0 L-2.16,-2.16 Z" fill="#93c5fd" opacity="0.88"/>
+      <circle r="2.52" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(210, -110)" filter="url(#sparkleGlow)">
+      <path d="M0,-10 L2.40,-2.40 L10,0 L2.40,2.40 L0,10 L-2.40,2.40 L-10,0 L-2.40,-2.40 Z" fill="#a5f3fc" opacity="0.88"/>
+      <circle r="2.80" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(0, -390)" filter="url(#sparkleGlow)">
+      <path d="M0,-15 L3.60,-3.60 L15,0 L3.60,3.60 L0,15 L-3.60,3.60 L-15,0 L-3.60,-3.60 Z" fill="#f0abfc" opacity="0.88"/>
+      <circle r="4.20" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(-85, -310)" filter="url(#sparkleGlow)">
+      <path d="M0,-8 L1.92,-1.92 L8,0 L1.92,1.92 L0,8 L-1.92,1.92 L-8,0 L-1.92,-1.92 Z" fill="#fde047" opacity="0.88"/>
+      <circle r="2.24" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(95, -300)" filter="url(#sparkleGlow)">
+      <path d="M0,-9 L2.16,-2.16 L9,0 L2.16,2.16 L0,9 L-2.16,2.16 L-9,0 L-2.16,-2.16 Z" fill="#93c5fd" opacity="0.88"/>
+      <circle r="2.52" fill="white" opacity="0.92"/>
+    </g>
+    <g transform="translate(-180, -80) rotate(45) scale(1.2)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+    <g transform="translate(190, -70) rotate(-30) scale(1)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+    <g transform="translate(-160, -320) rotate(120) scale(0.8)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+    <g transform="translate(170, -310) rotate(-100) scale(0.9)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+    <g transform="translate(-220, -180) rotate(70) scale(0.7)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+    <g transform="translate(230, -170) rotate(-55) scale(0.75)" opacity="0.85" filter="url(#softGlow)">
+      <use href="#floatingPetal"/>
+    </g>
+  </g>
+  <text x="45" y="80" font-size="20" fill="#f472b6" opacity="0.45" text-anchor="middle" dominant-baseline="middle">♡</text>
+  <text x="675" y="96" font-size="17" fill="#e879f9" opacity="0.4" text-anchor="middle" dominant-baseline="middle">♥</text>
+  <text x="30" y="416" font-size="16" fill="#f9a8d4" opacity="0.42" text-anchor="middle" dominant-baseline="middle">♡</text>
+  <text x="705" y="464" font-size="18" fill="#f0abfc" opacity="0.45" text-anchor="middle" dominant-baseline="middle">♥</text>
+  <text x="75" y="704" font-size="15" fill="#fbcfe8" opacity="0.4" text-anchor="middle" dominant-baseline="middle">♡</text>
+  <text x="660" y="720" font-size="19" fill="#f472b6" opacity="0.42" text-anchor="middle" dominant-baseline="middle">♥</text>
+  <text x="135" y="256" font-size="13" fill="#e879f9" opacity="0.35" text-anchor="middle" dominant-baseline="middle">♡</text>
+  <text x="600" y="304" font-size="14" fill="#f9a8d4" opacity="0.38" text-anchor="middle" dominant-baseline="middle">♥</text>
+  <text x="375" y="24" font-size="16" fill="#c084fc" opacity="0.35" text-anchor="middle" dominant-baseline="middle">♡</text>
+  <text x="360" y="768" font-size="15" fill="#f0abfc" opacity="0.38" text-anchor="middle" dominant-baseline="middle">♥</text>
+  <text x="90" y="120" font-size="16" fill="#f0abfc" opacity="0.55" text-anchor="middle" dominant-baseline="middle">✦</text>
+  <text x="637" y="80" font-size="14" fill="#fde047" opacity="0.5" text-anchor="middle" dominant-baseline="middle">✧</text>
+  <text x="45" y="544" font-size="12" fill="#f9a8d4" opacity="0.45" text-anchor="middle" dominant-baseline="middle">⋆</text>
+  <text x="690" y="496" font-size="15" fill="#e879f9" opacity="0.52" text-anchor="middle" dominant-baseline="middle">✵</text>
+  <text x="150" y="736" font-size="13" fill="#fde047" opacity="0.48" text-anchor="middle" dominant-baseline="middle">✶</text>
+  <text x="585" y="752" font-size="14" fill="#f0abfc" opacity="0.5" text-anchor="middle" dominant-baseline="middle">✦</text>
+  <text x="390" y="24" font-size="12" fill="#f9a8d4" opacity="0.42" text-anchor="middle" dominant-baseline="middle">✧</text>
+  <text x="360" y="776" font-size="13" fill="#e879f9" opacity="0.45" text-anchor="middle" dominant-baseline="middle">⋆</text>
+  <text x="15" y="304" font-size="11" fill="#fde047" opacity="0.4" text-anchor="middle" dominant-baseline="middle">✵</text>
+  <text x="735" y="336" font-size="12" fill="#f0abfc" opacity="0.42" text-anchor="middle" dominant-baseline="middle">✶</text>
+  <text x="225" y="40" font-size="10" fill="#93c5fd" opacity="0.38" text-anchor="middle" dominant-baseline="middle">✦</text>
+  <text x="510" y="56" font-size="11" fill="#a5f3fc" opacity="0.4" text-anchor="middle" dominant-baseline="middle">✧</text>
+  <text x="262" y="760" font-size="12" fill="#bbf7d0" opacity="0.42" text-anchor="middle" dominant-baseline="middle">⋆</text>
+  <text x="465" y="744" font-size="10" fill="#fef3c7" opacity="0.4" text-anchor="middle" dominant-baseline="middle">✵</text>
+  <text x="30" y="176" font-size="18" opacity="0.4" text-anchor="middle" dominant-baseline="middle">🌸</text>
+  <text x="705" y="224" font-size="16" opacity="0.35" text-anchor="middle" dominant-baseline="middle">💮</text>
+  <text x="60" y="640" font-size="17" opacity="0.38" text-anchor="middle" dominant-baseline="middle">🌷</text>
+  <text x="675" y="624" font-size="15" opacity="0.32" text-anchor="middle" dominant-baseline="middle">✿</text>
+  <text x="187" y="64" font-size="14" opacity="0.3" text-anchor="middle" dominant-baseline="middle">❀</text>
+  <text x="540" y="48" font-size="15" opacity="0.32" text-anchor="middle" dominant-baseline="middle">🌺</text>
+  <text x="210" y="752" font-size="16" opacity="0.35" text-anchor="middle" dominant-baseline="middle">🪻</text>
+  <text x="525" y="736" font-size="14" opacity="0.3" text-anchor="middle" dominant-baseline="middle">🌼</text>
+
+  <!-- Vignette -->
+  <rect width="750" height="800" fill="url(#vignette)" pointer-events="none"/>
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stop-color="transparent"/>
+      <stop offset="80%" stop-color="#fdf2f8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#fbcfe8" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+</svg>
